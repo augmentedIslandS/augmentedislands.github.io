@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <title>&lt; Nike AR &gt; Shoes Sample</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css.css">
+
+  <!-- The following libraries and polyfills are recommended to maximize browser support -->
+  <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+  <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+  <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+  <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
+</head>
+
+<body>
+  <div class="grid-container">
+    <!--
+    <model-viewer class="a" src="/Models/Cake/AppleSpiceCake_GLB.glb" alt="Apple Cake 3D Model" auto-rotate camera-controls background-color="#FFF" style="height:250px;width:80%" ar ios-src="/Models/Cake/applespicecake-v2.usdz"> </model-viewer>
+    <model-viewer class="a" src="/Models/Astronaut/Astronaut.gltf" ios-src="/Models/Astronaut/Astronaut.usdz" alt="A 3D model of an astronaut" background-color="#FF6F59" shadow-intensity="1" camera-controls auto-rotate ar style="height:250px;width:80%"></model-viewer>
+	-->
+
+    <img src="/Imgs/AIS_Logo_2048.png" alt="Augmented Island Logo" class="center">
+
+    <model-viewer class="a" src="/Models/NikeShoe/NikeShoe.gltf" ios-src="/Models/NikeShoe/NikeShoe.usdz" alt="Nike AR Shoes" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar style="height:400px;width:90%">
+    </model-viewer>
+    <model-viewer class="a" src="/Models/Dress1/Dress1.gltf" ios-src="/Models/Dress1/Dress1.usdz" alt="Dress 1" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar style="height:400px;width:90%">
+    </model-viewer>
+    <model-viewer class="a" src="/Models/Dress2/Dress2.gltf" ios-src="/Models/Dress2/Dress2.usdz" alt="Dress 2" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar style="height:400px;width:90%">
+    </model-viewer>
+    </model-viewer>
+    <model-viewer class="a" src="/Models/Cake/Cake.glb" ios-src="/Models/Cake/Cake.usdz" alt="Delicious cake" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar style="height:400px;width:90%">
+    </model-viewer>
+    </model-viewer>
+    <model-viewer class="a" src="/Models/Burguer/burguer.glb" ios-src="/Models/Burguer/burguer.usdz" alt="Delicious burguer" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar style="height:400px;width:90%">
+    </model-viewer>
+
+
+  </div>
+  <!-- 💁 Include both scripts below to support all browsers! -->
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+
+</body>
+
+</html>
