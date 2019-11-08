@@ -59,10 +59,28 @@ function changeIt(number) {
   modelviewer.setAttribute("alt", alt_comment);
   var shadow = 1;
   modelviewer.setAttribute("shadow-intensity", shadow);
-  modelviewer.setAttribute("camera-controls", "");
-  modelviewer.setAttribute("ar", "");
-  modelviewer.setAttribute("auto-rotate", "");
+  modelviewer.setAttribute("camera-controls", '');
+  modelviewer.setAttribute("ar", '');
+  modelviewer.setAttribute("auto-rotate", '');
 
   document.getElementById("modelContainer").appendChild(modelviewer);
 
+  document.getElementById("modelModule").remove();
+  document.getElementById("modelNoModule").remove();
+
+  reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js', 0);
+  reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js', 1);
+}
+
+function reload_mv(srcUrlContains, isModule) {
+  var scriptsContainer = document.getElementById('model-scripts-container');
+  var script = document.createElement('script');
+  if (isModule == 0) {
+    script.setAttribute("type", "module");
+  }
+  if (isModule == 1) {
+    script.setAttribute("nomodule", '');
+  }
+  script.src = srcUrlContains;
+  scriptsContainer.appendChild(script);
 }
