@@ -54,7 +54,6 @@ function changeIt(number) {
   var modelviewer = document.createElement("model-viewer");
   modelviewer.setAttribute("class", "model");
   modelviewer.setAttribute("ID", "currentModel");
-  modelviewer.setAttribute("reveal", "interaction");
   modelviewer.setAttribute("poster", poster);
   modelviewer.setAttribute("ios-src", src);
   modelviewer.setAttribute("alt", alt_comment);
