@@ -49,21 +49,20 @@ function changeIt(number) {
       alt_comment = "";
   }
 
-  //document.getElementById("currentModel").remove();
+  document.getElementById("currentModel").remove();
 
-  //var modelviewer = document.createElement("model-viewer");
-  var modelviewer = document.getElementById("currentModel");
-  //modelviewer.setAttribute("class", "model");
-  //modelviewer.setAttribute("ID", "currentModel");
+  var modelviewer = document.createElement("model-viewer");
+  modelviewer.setAttribute("class", "model");
+  modelviewer.setAttribute("ID", "currentModel");
   modelviewer.setAttribute("poster", poster);
   modelviewer.setAttribute("ios-src", src);
   modelviewer.setAttribute("alt", alt_comment);
-  //var shadow = 1;
-  //modelviewer.setAttribute("shadow-intensity", shadow);
-  //modelviewer.setAttribute("camera-controls", "");
-  //modelviewer.setAttribute("ar", "");
-  //modelviewer.setAttribute("auto-rotate", "");
+  var shadow = 1;
+  modelviewer.setAttribute("shadow-intensity", shadow);
+  modelviewer.setAttribute("camera-controls", "");
+  modelviewer.setAttribute("ar", "");
+  modelviewer.setAttribute("auto-rotate", "");
 
-  //document.getElementById("modelContainer").appendChild(modelviewer);
+  document.getElementById("modelContainer").appendChild(modelviewer);
 
 }
