@@ -57,7 +57,8 @@ function changeIt(number) {
   modelviewer.setAttribute("class", "model");
   modelviewer.setAttribute("ID", "currentModel");
   modelviewer.setAttribute("poster", poster);
-  model.src = src;
+  //model.src = src;
+  modelviewer.setAttribute("src", src);
   modelviewer.setAttribute("ios-src", ios_src);
   modelviewer.setAttribute("alt", alt_comment);
   var shadow = 1;
@@ -68,11 +69,11 @@ function changeIt(number) {
 
   document.getElementById("modelContainer").appendChild(modelviewer);
 
-  document.getElementById("modelModule").remove();
-  document.getElementById("modelNoModule").remove();
+  //document.getElementById("modelModule").remove();
+  //document.getElementById("modelNoModule").remove();
 
-  reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js', 0);
-  reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js', 1);
+  //reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js', 0);
+  //reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js', 1);
 }
 
 function reload_mv(srcUrlContains, isModule) {
@@ -80,11 +81,11 @@ function reload_mv(srcUrlContains, isModule) {
   var script = document.createElement('script');
 
   if (isModule == 0) {
-    modelviewer.setAttribute("ID", "modelModule");
+    script.setAttribute("ID", "modelModule");
     script.setAttribute("type", "module");
   }
   if (isModule == 1) {
-    modelviewer.setAttribute("ID", "modelNoModule");
+    script.setAttribute("ID", "modelNoModule");
     script.setAttribute("nomodule", '');
   }
   script.src = srcUrlContains;
