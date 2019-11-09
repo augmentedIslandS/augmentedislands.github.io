@@ -1,4 +1,4 @@
-import '@google/model-viewer@v0.7.2';
+import 'https://unpkg.com/@google/model-viewer@v0.7.2';
 
 function changeIt(number) {
   var poster = "";
