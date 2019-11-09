@@ -1,3 +1,5 @@
+import '@google/model-viewer';
+
 function changeIt(number) {
   var poster = "";
   var src = "";
@@ -55,7 +57,8 @@ function changeIt(number) {
   modelviewer.setAttribute("class", "model");
   modelviewer.setAttribute("ID", "currentModel");
   modelviewer.setAttribute("poster", poster);
-  modelviewer.setAttribute("ios-src", src);
+  model.src = src;
+  modelviewer.setAttribute("ios-src", ios_src);
   modelviewer.setAttribute("alt", alt_comment);
   var shadow = 1;
   modelviewer.setAttribute("shadow-intensity", shadow);
