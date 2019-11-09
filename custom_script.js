@@ -1,4 +1,4 @@
-import '@google/model-viewer';
+//import '@google/model-viewer';
 
 function changeIt(number) {
   var poster = "";
