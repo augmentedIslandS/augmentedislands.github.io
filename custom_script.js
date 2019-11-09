@@ -75,10 +75,13 @@ function changeIt(number) {
 function reload_mv(srcUrlContains, isModule) {
   var scriptsContainer = document.getElementById('model-scripts-container');
   var script = document.createElement('script');
+
   if (isModule == 0) {
+    modelviewer.setAttribute("ID", "modelModule");
     script.setAttribute("type", "module");
   }
   if (isModule == 1) {
+    modelviewer.setAttribute("ID", "modelNoModule");
     script.setAttribute("nomodule", '');
   }
   script.src = srcUrlContains;
