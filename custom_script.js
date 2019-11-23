@@ -28,10 +28,10 @@ function changeIt(number) {
       alt_comment = "Dress 2 HD";
       break;
     case 3:
-      poster = "/Imgs/Posters/burguer_poster.png";
-      src = "/Models/Misc/Burguer/burguer.glb";
-      ios_src = "/Models/Misc/Burguer/burguer.usdz";
-      alt_comment = "Burguer Ultra HD";
+      poster = "/Imgs/Posters/burger_poster.png";
+      src = "/Models/Misc/Burger/burger.glb";
+      ios_src = "/Models/Misc/Burger/burger.usdz";
+      alt_comment = "Burger Ultra HD";
       break;
     case 4:
       poster = "/Imgs/Posters/casual_poster.png";
