@@ -1,14 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>&lt; Nike AR &gt; Shoes Sample</title>
+  <title>&lt; WebAR &gt; Reel</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css.css">
-
 
   <!-- The following libraries and polyfills are recommended to maximize browser support -->
   <!-- NOTE: you must adjust the paths as appropriate for your project -->
@@ -27,28 +25,34 @@
 
   <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
+  <script src="custom_script.js"></script>
+
 </head>
 
 <body>
   <div class="grid-container">
-  <!--
-    <model-viewer class="a" src="/Models/Cake/AppleSpiceCake_GLB.glb" alt="Apple Cake 3D Model" auto-rotate camera-controls background-color="#FFF" style="height:250px;width:80%" ar ios-src="/Models/Cake/applespicecake-v2.usdz"> </model-viewer>
-    <model-viewer class="a" src="/Models/Astronaut/Astronaut.gltf" ios-src="/Models/Astronaut/Astronaut.usdz" alt="A 3D model of an astronaut" background-color="#FF6F59" shadow-intensity="1" camera-controls auto-rotate ar style="height:250px;width:80%"></model-viewer>
-	-->
-  <model-viewer class="model" poster="Imgs/Posters/shoes_poster.png" src="Models/NikeShoes/NikeShoe1.gltf" ios-src="Models/NikeShoes/NikeShoe1.usdz" alt="Nike AR Shoes" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-  </model-viewer>
+    <!--  <model-viewer class="a" src="/Models/Cake/AppleSpiceCake_GLB.glb" alt="Apple Cake 3D Model" auto-rotate camera-controls background-color="#FFF" style="height:250px;width:80%" ar ios-src="/Models/Cake/applespicecake-v2.usdz"> </model-viewer>
+    <model-viewer class="a" src="/Models/Astronaut/Astronaut.gltf" ios-src="/Models/Astronaut/Astronaut.usdz" alt="A 3D model of an astronaut" background-color="#FF6F59" shadow-intensity="1" camera-controls auto-rotate ar style="height:250px;width:80%"></model-viewer>-->
+    <img src="/Imgs/AIS_Logo_2048.png" alt="Augmented Island Logo" class="center">
+    <button class="button" onclick="changeIt(0)">Nike</button>
+    <button class="button" onclick="changeIt(1)">Dress 1</button>
+    <button class="button" onclick="changeIt(2)">Dress 2</button>
+    <button class="button" onclick="changeIt(4)">Casual</button>
 
-  <!-- 💁 Include both scripts below to support all browsers! -->
-  <!-- Loads <model-viewer> for modern browsers: -->
-  <script type="module"
-      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js">
-  </script>
+    <div ID="modelContainer">
+      <model-viewer ID="currentModel" class="model" poster="Imgs/Posters/shoes_poster.png" src="Models/NikeShoes/NikeShoe1.gltf" ios-src="Models/NikeShoes/NikeShoe1.usdz" alt="Nike AR Shoes" background-color="#FFFFFF" shadow-intensity="1"
+        camera-controls auto-rotate ar>
+      </model-viewer>
+    </div>
 
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
-  <script nomodule
-      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
-  </script>
-
+  </div>
+  <div ID="model-scripts-container">
+    <script ID="modelModule" type="module" src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js">
+    </script>
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script ID="modelNoModule" nomodule src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
+    </script>
+  </div>
 </body>
 
 </html>
