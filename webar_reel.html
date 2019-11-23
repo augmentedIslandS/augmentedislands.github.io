@@ -25,57 +25,41 @@
 
   <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
+  <script src="custom_script.js"></script>
+
 </head>
 
 <body>
   <div class="grid-container">
-    <!--
-    <model-viewer class="a" src="/Models/Cake/AppleSpiceCake_GLB.glb" alt="Apple Cake 3D Model" auto-rotate camera-controls background-color="#FFF" style="height:250px;width:80%" ar ios-src="/Models/Cake/applespicecake-v2.usdz"> </model-viewer>
-    <model-viewer class="a" src="/Models/Astronaut/Astronaut.gltf" ios-src="/Models/Astronaut/Astronaut.usdz" alt="A 3D model of an astronaut" background-color="#FF6F59" shadow-intensity="1" camera-controls auto-rotate ar style="height:250px;width:80%"></model-viewer>
-	-->
-
+    <!--  <model-viewer class="a" src="/Models/Cake/AppleSpiceCake_GLB.glb" alt="Apple Cake 3D Model" auto-rotate camera-controls background-color="#FFF" style="height:250px;width:80%" ar ios-src="/Models/Cake/applespicecake-v2.usdz"> </model-viewer>
+    <model-viewer class="a" src="/Models/Astronaut/Astronaut.gltf" ios-src="/Models/Astronaut/Astronaut.usdz" alt="A 3D model of an astronaut" background-color="#FF6F59" shadow-intensity="1" camera-controls auto-rotate ar style="height:250px;width:80%"></model-viewer>-->
     <img src="/Imgs/AIS_Logo_2048.png" alt="Augmented Island Logo" class="center">
+    <button class="button" onclick="changeIt(0)">Nike</button>
+    <button class="button" onclick="changeIt(1)">Dress 1</button>
+    <button class="button" onclick="changeIt(2)">Dress 2</button>
+    <button class="button" onclick="changeIt(3)">Burger</button>
+    <button class="button" onclick="changeIt(4)">Casual</button>
 
-    <model-viewer class="model" reveal="interaction" poster="Imgs/Posters/shoes_poster.png" src="Models/NikeShoes/NikeShoe1.gltf" ios-src="Models/NikeShoes/NikeShoe1.usdz" alt="Nike AR Shoes" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
+    <div ID="modelContainer">
+      <model-viewer ID="currentModel" class="model" poster="Imgs/Posters/shoes_poster.png" src="Models/NikeShoes/NikeShoe1.gltf" ios-src="Models/NikeShoes/NikeShoe1.usdz" alt="Nike AR Shoes" background-color="#FFFFFF" shadow-intensity="1"
+        camera-controls auto-rotate ar>
+      </model-viewer>
+    </div>
 
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/casual_poster.png" src="/Models/Clothing/CasualOutfit.gltf" ios-src="/Models/Clothing/CasualOutfit.usdz" alt="Casual outfit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	<!--
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitA_poster.png" src="/Models/Swimsuits/Swimsuit_A.gltf" ios-src="/Models/Swimsuits/Swimsuit_A.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitB_poster.png" src="/Models/Swimsuits/Swimsuit_B.gltf" ios-src="/Models/Swimsuits/Swimsuit_B.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitC_poster.png" src="/Models/Swimsuits/Swimsuit_C.gltf" ios-src="/Models/Swimsuits/Swimsuit_C.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
+  </div>
+  <div ID="model-scripts-container">
 
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitD_poster.png" src="/Models/Swimsuits/Swimsuit_D.gltf" ios-src="/Models/Swimsuits/Swimsuit_D.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitE_poster.png" src="/Models/Swimsuits/Swimsuit_E.gltf" ios-src="/Models/Swimsuits/Swimsuit_E.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	<model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/swimsuitF_poster.png" src="/Models/Swimsuits/Swimsuit_F.gltf" ios-src="/Models/Swimsuits/Swimsuit_F.usdz" alt="Swimsuit" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-    <model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/dress1_poster.png" src="/Models/Clothing/Dress1.gltf" ios-src="/Models/Clothing/Dress1.usdz" alt="Dress 1" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-    <model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/dress2_poster.png" src="/Models/Clothing/Dress2.gltf" ios-src="/Models/Clothing/Dress2.usdz" alt="Dress 2" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
+    <script ID="modelModule" type="module" src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js">
+    </script>
 
-    <model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/cake_poster.png" src="/Models/Misc/Cake/Cake.glb" ios-src="/Models/Misc/Cake/Cake.usdz" alt="Delicious cake" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
-	-->
-    <model-viewer class="model" reveal="interaction" poster="/Imgs/Posters/burger_poster.png" src="/Models/Misc/Burger/burger.glb" ios-src="/Models/Misc/Burger/burger.usdz" alt="Delicious burger" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
-    </model-viewer>
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script ID="modelNoModule" nomodule src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
+    </script>
 
 
   </div>
-  <script type="module"
-      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js">
-  </script>
 
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
-  <script nomodule
-      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
-  </script>
+
 
 </body>
 
