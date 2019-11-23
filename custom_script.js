@@ -31,7 +31,7 @@ function changeIt(number) {
     poster = "/Imgs/Posters/burguer_poster.png";
     src = "/Models/Misc/Burguer/Burguer.glb";
     ios_src = "/Models/Misc/Burguer/Burguer.usdz";
-    alt_comment = "Burguer HD";
+    alt_comment = "Burguer Ultra HD";
       break;
     case 4:
     poster = "/Imgs/Posters/casual_poster.png";
