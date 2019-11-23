@@ -28,16 +28,16 @@ function changeIt(number) {
       alt_comment = "Dress 2 HD";
       break;
     case 3:
-    poster = "/Imgs/Posters/burguer_poster.png";
-    src = "/Models/Misc/Burguer/Burguer.glb";
-    ios_src = "/Models/Misc/Burguer/Burguer.usdz";
-    alt_comment = "Burguer Ultra HD";
+      poster = "/Imgs/Posters/burguer_poster.png";
+      src = "/Models/Misc/Burguer/burguer.glb";
+      ios_src = "/Models/Misc/Burguer/burguer.usdz";
+      alt_comment = "Burguer Ultra HD";
       break;
     case 4:
-    poster = "/Imgs/Posters/casual_poster.png";
-    src = "/Models/Clothing/CasualOutfit.gltf";
-    ios_src = "/Models/Clothing/CasualOutfit.usdz";
-    alt_comment = "Casual HD";
+      poster = "/Imgs/Posters/casual_poster.png";
+      src = "/Models/Clothing/CasualOutfit.gltf";
+      ios_src = "/Models/Clothing/CasualOutfit.usdz";
+      alt_comment = "Casual HD";
       break;
     case 5:
       poster = "";
