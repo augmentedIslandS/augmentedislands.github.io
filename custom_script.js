@@ -67,6 +67,7 @@ function changeIt(number) {
   modelviewer.setAttribute("camera-controls", '');
   modelviewer.setAttribute("ar", '');
   modelviewer.setAttribute("auto-rotate", '');
+  modelviewer.setAttribute("autoplay", "true");
 
   document.getElementById("modelContainer").appendChild(modelviewer);
 
