@@ -40,10 +40,10 @@ function changeIt(number) {
       alt_comment = "Casual HD";
       break;
     case 5:
-      poster = "";
-      src = "";
-      ios_src = "";
-      alt_comment = "";
+    poster = "/Imgs/Posters/pipe_poster.png";
+    src = "/Models/Pipe/USPipe_CrossSection.gltf";
+    ios_src = "/Models/Pipe/USPipe_CrossSection.usdz";
+    alt_comment = "Pipe";
       break;
     case 6:
       poster = "";
