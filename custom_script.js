@@ -46,7 +46,7 @@ function changeIt(number) {
       alt_comment = "U.S. Pipe Product Catalog Demo";
       break;
     case 6:
-    poster = "/Imgs/Posters/pipe_poster.png";
+    poster = "/Imgs/Posters/pipeemsemble_poster.png";
     src = "/Models/Pipe/USPipe_Ensamble.gltf";
     ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
     alt_comment = "U.S. Pipe Emsemble Product Catalog Demo";
