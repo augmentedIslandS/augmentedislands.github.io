@@ -40,16 +40,23 @@ function changeIt(number) {
       alt_comment = "Casual HD";
       break;
     case 5:
+      poster = "/Imgs/Posters/pipe_poster.png";
+      src = "/Models/Pipe/USPipe_CrossSection.gltf";
+      ios_src = "/Models/Pipe/USPipe_CrossSection.usdz";
+      alt_comment = "U.S. Pipe Product Catalog Demo";
+      break;
+    case 6:
     poster = "/Imgs/Posters/pipe_poster.png";
-    src = "/Models/Pipe/USPipe_CrossSection.gltf";
-    ios_src = "/Models/Pipe/USPipe_CrossSection.usdz";
-    alt_comment = "U.S. Pipe Product Catalog Demo";
+    src = "/Models/Pipe/USPipe_Ensamble.gltf";
+    ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
+    alt_comment = "U.S. Pipe Emsemble Product Catalog Demo";
       break;
     case 6:
       poster = "";
       src = "";
       ios_src = "";
       alt_comment = "";
+      break;
   }
 
   document.getElementById("currentModel").remove();
