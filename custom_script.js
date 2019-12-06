@@ -43,19 +43,19 @@ function changeIt(number) {
       poster = "/Imgs/Posters/pipe_poster.png";
       src = "/Models/Pipe/USPipe_CrossSection.gltf";
       ios_src = "/Models/Pipe/USPipe_CrossSection.usdz";
-      alt_comment = "U.S. Pipe Product Catalog Demo";
+      alt_comment = "U.S. Pipe CrossSection 1.2";
       break;
     case 6:
     poster = "/Imgs/Posters/pipeemsemble_poster.png";
     src = "/Models/Pipe/USPipe_Ensamble.gltf";
     ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
-    alt_comment = "U.S. Pipe Emsemble Product 4.2";
+    alt_comment = "U.S. Pipe Emsemble Product 1.2";
       break;
     case 7:
     poster = "/Imgs/Posters/pipefull_poster.png";
     src = "/Models/Pipe/USPipe_Full.gltf";
     ios_src = "/Models/Pipe/USPipe_Full.usdz";
-    alt_comment = "U.S. Pipe Emsemble Full 1.0";
+    alt_comment = "U.S. Pipe Emsemble Full 1.2";
       break;
   }
 
