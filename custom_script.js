@@ -49,13 +49,13 @@ function changeIt(number) {
     poster = "/Imgs/Posters/pipeemsemble_poster.png";
     src = "/Models/Pipe/USPipe_Ensamble.gltf";
     ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
-    alt_comment = "U.S. Pipe Emsemble Product 4.0";
+    alt_comment = "U.S. Pipe Emsemble Product 4.1";
       break;
-    case 6:
-      poster = "";
-      src = "";
-      ios_src = "";
-      alt_comment = "";
+    case 7:
+    poster = "/Imgs/Posters/pipeemsemble_poster.png";
+    src = "/Models/Pipe/USPipe_Full.gltf";
+    ios_src = "/Models/Pipe/USPipe_Full.usdz";
+    alt_comment = "U.S. Pipe Emsemble Full 1.0";
       break;
   }
 
