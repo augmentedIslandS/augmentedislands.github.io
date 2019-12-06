@@ -49,7 +49,7 @@ function changeIt(number) {
     poster = "/Imgs/Posters/pipeemsemble_poster.png";
     src = "/Models/Pipe/USPipe_Ensamble.gltf";
     ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
-    alt_comment = "U.S. Pipe Emsemble Product 4.1";
+    alt_comment = "U.S. Pipe Emsemble Product 4.2";
       break;
     case 7:
     poster = "/Imgs/Posters/pipeemsemble_poster.png";
