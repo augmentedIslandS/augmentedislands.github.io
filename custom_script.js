@@ -52,7 +52,7 @@ function changeIt(number) {
     alt_comment = "U.S. Pipe Emsemble Product 4.2";
       break;
     case 7:
-    poster = "/Imgs/Posters/pipeemsemble_poster.png";
+    poster = "/Imgs/Posters/pipefull_poster.png";
     src = "/Models/Pipe/USPipe_Full.gltf";
     ios_src = "/Models/Pipe/USPipe_Full.usdz";
     alt_comment = "U.S. Pipe Emsemble Full 1.0";
