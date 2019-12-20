@@ -57,6 +57,12 @@ function changeIt(number) {
     ios_src = "/Models/Pipe/USPipe_Full.usdz";
     alt_comment = "U.S. Pipe Emsemble Full 1.2";
       break;
+    case 8:
+    poster = "/Imgs/Posters/surf_01.png";
+    src = "/Models/SurfBoards/SurfBoard_01.gltf";
+    ios_src = "/Models/Pipe/SurfBoard_01.usdz";
+    alt_comment = "Surf Prescriptions Board";
+      break;
   }
 
   document.getElementById("currentModel").remove();
