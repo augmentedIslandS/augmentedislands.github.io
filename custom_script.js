@@ -60,7 +60,7 @@ function changeIt(number) {
     case 8:
     poster = "/Imgs/Posters/surf_01.png";
     src = "/Models/SurfBoards/SurfBoard_01.gltf";
-    ios_src = "/Models/Pipe/USPipe_Full.usdz";
+    ios_src = "/Models/NikeShoes/NikeShoe1.usdz";
     alt_comment = "Surf Prescriptions Board";
       break;
   }
