@@ -61,7 +61,7 @@ function changeIt(number) {
     poster = "/Imgs/Posters/surf_01.png";
     src = "/Models/SurfBoards/SurfBoard_01.gltf";
     ios_src = "/Models/SurfBoards/SurfBoard_01.usdz";
-    alt_comment = "Surf Prescriptions Boards";
+    alt_comment = "Surf Prescriptions Board";
       break;
   }
 
