@@ -1,0 +1,1602 @@
+.clearfix:before, .clearfix:after{
+
+content: " "; /* 1 */ display: table; /* 2 */
+
+}
+
+.clearfix:after {
+
+clear: both;
+
+}
+
+/** * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+
+.clearfix { *zoom: 1; }
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+       /* -------------------------- home page ---------------------------------- */
+
+
+
+html, body{
+    height:100%;
+}
+
+body{
+    background-color: #000;
+}
+
+#wrapper{
+    width: 100%;
+    min-width:1224px;
+    height:100%;
+    min-height: 768px;
+    background-color:#000;
+}
+
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    font-size:2em;
+    color:#fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    margin-top: 20px;
+
+}
+
+
+                     /* ---- nav bar ---- */
+
+nav{
+    width: 340px;
+    height: 100%;
+    float:left;
+    
+    position:absolute;
+    background-color:#000;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+                
+
+
+.logo{
+    width: 300px;
+    height: 200px;
+    
+    display: block;
+    padding: 40px 20px 20px 20px;
+}
+
+.logo img{
+    width:300px;
+    height:auto;
+}
+
+nav ul{
+    margin-top:5px;
+    
+}
+
+nav ul li{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+nav ul li a{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    
+    letter-spacing: 2px;
+}
+
+nav ul li a:link{
+    text-decoration: none;
+    color:#cdcdcd;
+    
+}
+
+nav ul li a:visited{
+    text-decoration: none;
+    color:#cdcdcd;
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    color:#fff;
+    letter-spacing: 4px;
+    
+}
+
+nav ul li a:active{
+    text-decoration:none;
+    color:#fff;
+    letter-spacing: 4px;
+}
+
+.current a:link{
+    letter-spacing:4px;
+    text-decoration: underline;
+    color:#fff;
+}
+
+.current a:visited{
+    letter-spacing:4px;
+    text-decoration: underline;
+    color:#fff;
+}
+
+.current a:hover{
+    letter-spacing:4px;
+    text-decoration: underline;
+    color:#fff;
+}
+
+.current a:active{
+    letter-spacing:4px;
+    text-decoration: underline;
+    color:#fff;
+}
+
+
+.location{
+    font-family: 'Lato', sans-serif;
+    margin-top: 180px;
+    
+    text-align:center;
+    
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    
+    color: #fff;
+}
+
+.location a{
+    color:#fff;
+}
+
+.location p{
+    color: #fff;
+    padding-top:5px;
+}
+
+
+p.showmobile{
+        text-align: center;
+        visibility: hidden;
+    }
+
+
+                     /* ---- left col ---- */
+
+.left{
+    height:100%;
+    width:384px;
+    float:left;
+    
+    display:inline-block; 
+    position:absolute;
+}
+
+
+
+#instafeed{
+    height:50%;
+    min-height:384px;
+    width:384px;
+    padding:none;
+    margin:none;
+    
+    background-image: url(images/feet.jpg);
+    background-size:cover;
+    
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    
+}
+
+#instafeed:hover{
+    background-image:url(images/about2.jpg);
+    background-position: top;
+}
+
+
+.if{
+    height:50%;
+    min-height:384px;
+    width:384px;
+}
+
+
+
+
+.whitebox{
+    width: 300px;
+    display:block;
+    margin-left:37px;
+    margin-top: 165px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border: 3px solid #fff;
+}
+
+
+h2{   
+    font-family: 'Lato', sans-serif;
+    font-size:24px;
+    color:#fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align:center;
+    
+}
+
+
+.athumb{
+    background-image: url(images/doc-about-bw.jpg);
+    background-size:cover;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.athumb:hover{
+    background-image: url(images/doc-about.jpg);
+    background-size: cover;
+   
+}
+
+
+
+
+
+                   /* ---- Right col ---- */
+
+
+.right{
+    float:left;
+    width: calc(100% - 384px);
+    -webkit-width: calc(100% - 384px);
+    -moz-width: calc(100% - 384px);
+    -o-width: calc(100% - 384px);
+    
+    height:100%;
+    min-height:768px;
+    margin-left:384px;
+    
+    background-image: url(images/boardsbg.jpg);
+    background-size: cover;
+}
+
+
+.boardbox{
+    width: 300px;
+    display:block;
+    text-align: center;
+    border: 3px solid #fff;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    position: relative;
+    left: 30%;
+    top: 70px;
+    
+}
+
+
+.homeboard{
+    width:300px;
+    position:relative;
+    left:30%;
+    top:100px;
+    
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.homeboard:hover{
+    width:320px;
+    left:29%;
+    top:95px;
+}
+
+                                /* -------------------- BOARDS -------------------------- */
+
+
+
+#boardwrapper{
+    width:4200px;
+    height:100%;
+    min-height: 768px;
+
+    background-color: #354656;
+}
+
+
+.fixed{
+    position:fixed;
+    
+    z-index: 300;
+    
+}
+
+
+.boardpageh1{
+    margin-left:42.5%;
+    position:fixed;
+}
+
+
+.board-name{
+    display: block;
+    margin-top: 150px;
+    margin-left: 350px;
+}
+
+.board-name ul{
+    float:left;
+    display: inline-block;
+    width: 275px;
+}
+
+.board-name ul li{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size: 11pt;
+    line-height: 170%;
+    letter-spacing: 3px;
+    color:#fff;
+}
+
+.board-name ul li img{
+    width: 250px;
+    
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+.board-name ul li img:hover{
+    width: 275px;
+    margin-top:-30px;
+}
+
+.flying {
+    width:100px;
+    
+}
+
+.board-name ul li .turtle{
+    height:458px;
+    width: auto;
+}
+
+.board-name ul li .turtle:hover{
+    height: 505px;
+    width: auto;
+}
+
+
+.arrow{
+    z-index: 2;
+    position:fixed;
+    width:50px;
+    left:93%;
+    top: 45%;
+}
+
+
+
+                    /* ---------- individual board page ------------ */
+
+.boardhead{
+    width:100%;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.bluebg{
+    background-color: #354656;
+}
+
+.showcase{
+    margin-top: 60px;
+    margin-left: 50px;
+    
+    display:block;
+}
+
+.slider-for{
+    height:613px;
+    width:296px;
+    
+    display: block;
+    
+    float:left;
+}
+
+.slider-for img{
+    height:613px;
+}
+
+.slider-nav{
+    float:left;
+    margin-top: 460px;
+    
+    
+    width: 300px;
+    
+}
+
+
+
+.slider-nav div{
+    display: inline-block;
+    float:left;
+    width:340px;
+}
+
+.slider-nav img{
+    height:200px;
+    display:inline-block;
+    float: left;
+    
+    background-color: rgba(255,255,255,.2);
+    border: 2px solid #112d52;
+}
+
+.slider-nav img:hover{
+    height:200px;
+    display:inline-block;
+    float: left;
+    
+    background-color: rgba(255,255,255,.7);
+    border: 2px solid #112d52;
+}
+
+
+.description{
+    width:48%;
+    
+    
+    display: block;
+    float:left;
+    margin-top:-600px;
+    margin-left:45px;
+}
+
+.description p{
+    margin:0;
+}
+
+.description a p{
+    text-align: left;
+    
+    margin-top: 20px;
+    
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size: 11pt;
+    font-style: oblique;
+    line-height: 170%;
+    letter-spacing: 3px;
+    color:#fff;
+}
+
+.description a p:hover{
+    text-decoration: underline;
+}
+
+.boardpage{
+    text-align: left;
+    padding-bottom:10px;
+    
+    text-decoration: underline;
+}
+
+
+
+
+                                  /* ------------------- ABOUT US -----------------------*/
+
+.fullbg{
+    width: calc(100% - 340px);
+    -webkit-width: calc(100% - 340px);
+    -moz-width: calc(100% - 340px);
+    -o-width: calc(100% - 340px);
+    height:100%;
+    min-height: 768px;
+    
+    position:relative;
+    left:340px;
+    
+    float:left;
+}
+
+
+.about{
+    background-image: url(images/doc-about.jpg);
+    background-size:cover;
+    background-position: center top;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-weight:900;
+    font-size: 3.8em;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+    margin:450px 10% 0 10%;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size: 11pt;
+    line-height: 170%;
+    letter-spacing: 2px;
+    color:#fff;
+    
+    margin:0 10% 0 10%;
+}
+
+
+                                 /* ---------------------- GET CONNECTED ---------------------- */
+
+.connect{
+    background-color:#354656;
+}
+
+.connecth1{
+    width: 100%;
+    text-align: center;
+    margin-left:0;
+}
+
+
+.upper{
+    display:block;
+    width: 100%;
+    height: 50%;
+}
+    
+.upper p{
+    padding-top:120px;
+    font-size: 25px;
+    text-align: center;
+}
+    
+.lower{
+    display:block;
+    width: 100%;
+    height: 50%;
+    background-image: url(images/connect-full-bw.jpg);
+    background-size:cover;
+    background-position: center;
+    
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.lower:hover{
+    background-image: url(images/connect-full.jpg);
+}
+
+.lower .whitebox{
+    display: block;
+    margin-left:35%;
+}
+
+.gram{
+    padding-top: 20px;
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    display: block;
+    width: 30%;
+    margin-left:35%;   
+}
+
+.gram:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+                                /* ------------------- RETAILERS ------------------- */
+
+
+.retail{
+    background-image: url(images/retailersbg.jpg);
+    background-size:cover;
+}
+
+
+.relative{
+    position: relative;
+}
+
+h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8em;
+    font-weight:700;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.retail-list{
+    width:20%;
+    margin: 20px 2.5% 0 2.5%;
+    float:left;
+}
+
+.retail-list li{
+    margin-top: 15px;
+    
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    font-size: 8pt;
+    letter-spacing: 2px;
+    line-height:140%;
+}
+
+.store{
+    font-family: 'Lato', sans-serif;
+    color: #c1d557;
+    font-weight:700;
+    font-size:10pt;
+}
+
+
+.eastcont{
+    float: left;
+    margin-top: 50px;
+    }
+
+
+                         /* ----------------------- ASK DOC ----------------------- */
+
+
+.askbg{
+    background-image:url(images/askbg.jpg);
+    background-size:cover;
+}
+
+.askbg p{
+    font-size: 12pt;
+    margin-top: 15px;
+}
+
+
+form{
+    margin:50px 10% 0 10%;
+    float:left;
+    width: 410px;
+}
+
+
+label{
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size: 11pt;
+    line-height: 170%;
+    letter-spacing: 3px;
+    color:#fff;
+    text-align: right;
+    margin-top:5px;
+    
+    display:block;
+    width:100%;
+    float:left;
+}
+
+input[type=text],input[type=email]{
+    width:300px;
+    background-color: rgba(255,255,255,0.6);
+    border:none;
+    border-radius:3px;
+    
+}
+
+input[type=text]:focus,input:focus[type=email]{
+    background-color:rgba(255,255,255,1);
+}
+
+textarea{
+    width:300px;
+    height:150px;
+    background-color:rgba(255,255,255,0.6);
+    border:none;
+    border-radius:3px;
+}
+
+
+textarea:focus{
+    background-color:rgba(255,255,255,1);
+}
+
+input[type=submit]{
+    width:100px;
+    height:50px;
+    background-color:#112D52;
+    border:none;
+    
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    font-size:11pt;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    float:right;
+    
+}
+
+input[type=submit]:hover{
+    background-color:#112D52;
+    border: 2px solid #c1d557;
+    color: #c1d557;
+}
+
+
+                                 /* ------------------------- CONTACT CONFIRMATION PHP PAGE ----------------------------*/
+
+#pagewrap{
+    width:100%;
+    height:768px;
+    background-image: url(images/askbg.jpg);
+    background-size: cover;
+    
+}
+
+#pagewrap img{
+    display:block;
+    margin: 50px auto;
+    
+    width:350px;
+}
+
+.confirm{
+    margin: 75px 20%;
+    
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------- TABLET --------------------------------------------------------------------- */
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    
+    #wrapper{
+        width:100%;
+        min-height: 768px;
+        max-height: 1024px;
+        
+        height:100%;
+        min-width:768px;
+        max-width: 1024px;
+        
+    }
+    
+    .fullbg{
+        width: calc(100% - 250px);
+        position:relative;
+        left:250px;
+    }
+    
+    nav{
+        width: 250px; 
+        height: 768px;
+        float:left;
+    
+        position:absolute;
+        background-color:#000;
+    
+        font-family: 'Lato', sans-serif;
+    }
+
+    .logo{
+        width: 210px;
+        height: 200px;
+    
+        display: block;
+        padding: 50px auto;
+    }
+
+    .logo img{
+        width:210px;
+        height:auto;
+        
+    }
+    
+    
+    /* ---------- home page --------- */
+    
+    .left{
+        width:50%;
+
+    }
+    
+    .right{
+        width: 50%;
+        margin-left:50%;
+        height:100%;
+    }
+    
+    
+    .if{
+        height:50%;
+        width:100%;
+        
+        float:left;
+    }
+
+    
+    #instafeed{
+        height:50%;
+        width:100%;
+        
+        background-position: center;
+    }
+    
+    .athumb{
+        height:50%;
+        width:100%;
+        
+        background-position: center;
+    }
+    
+    .whitebox{
+        width: 75%;
+        display:block;
+        margin-left:37px;
+        margin-top: 165px;
+    
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        border: 3px solid #fff;
+    }
+    
+    h2{   
+        font-family: 'Lato', sans-serif;
+        font-size:18px;
+        color:#fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align:center;
+    
+    }
+
+
+    .boardbox{
+        width: 75%;
+    
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        position: relative;
+        left: 12.5%;
+        top: 70px;
+    
+    }
+
+    .homeboard{
+        width:90%;
+        max-width: 335px;
+        margin:auto;
+        
+        left:5%;
+        top:80px;
+    
+        transition: all 300ms ease;
+        
+        overflow: hidden;
+    }
+
+    .homeboard:hover{
+        width:95%;
+        left:2.5%;
+        top:60px;
+        
+        overflow: hidden;
+    }
+
+    
+
+/* ------------ Boards Page ------------- */
+    
+    
+    .boardpageh1{
+        margin-left:35%;
+        position:fixed;
+        
+        font-size: 1.8em;
+    }
+    
+    .board-name{
+        margin-left:250px;
+    }
+   
+    
+    
+ /* ---------- Individual Boards -------- */
+    
+    .boardhead{
+        display:block; 
+        width: 100%;
+        margin-top:30px;
+        text-align: center;
+        
+        font-size: 1.6em;
+    }
+    
+    
+    .showcase{
+        margin-left: 2.5%;
+        width:250px;
+    }
+    
+    .description{
+        width:45%;
+        
+        margin-left:60px;
+        margin-top:-420px;
+        
+    }
+    
+    .description h2{
+        font-size: 15pt;
+    }
+    
+    .description p{
+        font-size: 1opt;
+    }
+    
+    
+    .slider-for{
+        width:250px;
+        height: 420px;
+        
+        float:none;
+        display: block;
+    }
+    
+    .slider-for img{
+        width:240px;
+        height:auto;
+        
+        margin: 0 auto ;
+    }
+    
+    .v12 img{
+        width:200px;
+    }
+    
+    .slider-nav{
+        margin-top:20px;
+        
+        width:220px;
+    }
+    
+    .slider-nav div{
+        width:280px;
+    }
+    
+    .slider-nav img{
+        height: 175px;
+        float:left;
+        display: inline-block;
+    }
+    
+    .slider-nav img:hover{
+        height: 175px;
+    }
+    
+    
+    
+    
+/* ------------- Retailers ------------- */
+    
+    h4{
+        font-size: 1.2em;
+    }
+    
+    .store{
+        font-size: 8pt;
+    }
+    
+    .retail h1{
+        font-size:1.8em;
+    }
+    
+    
+/* ------------- About Us ------------- */
+    
+    
+    h3{
+        font-size: 2.4em;
+        margin-top: 390px;
+    }
+    
+    .about{
+        background-position: left; 
+    }
+    
+    
+ /* --------- GET CONNECTED ------------- */
+
+    
+    .connecth1{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gram{
+        width:70%;
+        margin-left: 15%;
+    }
+    
+    .lower{
+        background-image: url(images/feet-bw.jpg);
+        background-size: cover;
+        background-position: bottom;
+        
+        transition: all 500ms ease-in-out;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+    }
+    
+    .lower:hover{
+        background-image:url(images/feet.jpg);
+    }
+    
+    
+    .lower .whitebox{
+        width:50%;
+        margin-left:25%;
+    }
+    
+    
+    
+    
+    
+} /* end of tablet */
+
+
+
+/* --------------------------------------------- MOBILE ----------------------------------------------------- */
+
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+    
+    
+    html,body{
+        width:100%;
+        height:100%;
+    }
+    
+    #wrapper{
+        width:100%;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    
+    /*-------------- HOME -------------*/
+    
+    nav{
+        display: block;
+        width:100vw;
+        height: 50px;
+        float:none;
+        
+        z-index: 1;
+        
+        background-color:#000;
+    }
+    
+    
+    ul.topnav li{
+        display: none;
+    }
+    
+    ul.topnav li.icon {
+        float: left;
+        display: inline-block;
+        padding-left:10px;
+        height:auto;
+        width: auto;
+        margin-top:8px;
+  }
+    
+    .icon a{
+        font-size:20px;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+        background-color:#000;
+        padding-bottom: 50px;
+        width:100vw;
+    }
+    
+    ul.topnav.responsive .logo{
+        display: inline-block;
+    }
+    
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        
+        left: 0;
+        top: 0;
+    }
+    
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .logo{
+        display:block;
+        height:200px;
+        width:100%;
+        margin:0 auto;
+    }
+    
+    .logo img{
+        margin-right:40px;
+        width: 280px;
+    }
+    
+    ul.topnav.responsive .location{
+        margin-top:20px;
+        color:#fff;
+    }
+    
+    nav ul li .location p{
+        margin-top:0px;
+    }
+    
+    p.showmobile{
+        text-align: center;
+        visibility: visible;
+        font-size:10pt;
+        margin:13px auto;
+    }
+    
+    
+    .fullbg{
+        width:100%;
+        left:0;
+        height:100%;
+        
+        margin-top: 50px;
+    }
+    
+    
+    
+    .left{
+        height:300px;
+        width:100%;
+        float:none;
+        display: inline-block;
+    }
+
+    
+    .if{
+        height:50%;
+        min-height:150px;
+        width:100%;
+    }
+    
+    
+    #instafeed{
+        height:50%;
+        min-height:150px;
+        width:100%;
+        background-position:bottom;
+    }
+    
+    .whitebox{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 55px;
+    
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .right{
+        float: none;
+        display:inline-block;
+        margin-left:0;
+        margin-top:300px;
+        height:700px;
+        width:100%;
+    }
+    
+    .boardbox{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        position: inherit;
+        
+    }
+    
+    .athumb{
+        background-position: top;
+    }
+    
+    .homeboard{
+        width:300px;
+        position: inherit;
+        display: block;
+        margin:0 auto;
+        margin-top:-30px;
+        
+        transition: all 300ms ease;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+    }
+
+    .homeboard:hover{
+        width:320px;
+    }
+    
+    .fixednav{
+        position:fixed;
+        left:0;
+        top:0;
+    }
+    
+    
+    /* ------------- About Page ---------------- */ 
+    
+    .about{
+    background-image: url(images/doc-about.jpg);
+    background-size:cover;
+    background-position: left;
+}
+
+
+    
+    h3{
+        font-size:1.7em;
+        margin-top:150px;
+    }
+    
+    
+
+    
+    
+/* ------------------------ Board Home ------------------------- */    
+    .boardpageh1{
+        margin-top:60px;
+        margin-left:5%;
+        width:95vw;
+        position:fixed;
+        text-align: center;
+        font-size:1.1em;
+    }
+    
+    .board-name{
+        height:100%;
+        margin-top:100px;
+        margin-left:0;
+    }
+    
+    .board-name ul{
+        width: 50%;
+        height:auto;
+        min-height:400px;
+        margin-bottom:10px;
+    }
+    
+    .board-name ul li{
+        font-size:11pt;
+    }
+    
+    .board-name ul li img{
+        margin:0 auto;
+        width: 100%;
+        height:auto;
+    }
+    
+    .board-name ul li img:hover{
+        
+        width: 100%;
+        height:auto;
+        margin: 0 auto;
+    }
+    
+    
+    #boardwrapper{
+        width:100%;
+        height:230%;
+    }
+    
+    .board-name ul li .turtle{
+        display: block;
+        width:90.5%;
+        height:auto;
+    }
+    
+    .board-name ul li .turtle:hover{
+        width:90.5%;
+        height:auto;
+        margin:0 auto;
+    }
+    
+    
+    .arrow{
+        display:none;
+    }
+    
+    
+/* ----------------------- Retailers -------------------------- */
+    
+    
+    
+    .retail{
+        background-position: center;
+        height:75em;
+    }
+    
+    .retail h1{
+        margin:10px 0 0 0;
+        text-align: center;
+        font-size:1.5em;
+    }
+    
+    .retail-list{
+        width: 45%;
+        float:left;
+    }
+    
+    .retail-list li{
+        text-decoration: none;
+    } 
+    
+    .retail-list li a{
+        text-decoration: none;
+    } 
+    
+    h4{
+        font-size: 1.5em;
+    }
+    
+    .eastcont{
+        float: right;
+        margin-top:0;
+    }
+    
+    .intl{
+        margin-top:-120px;
+    }
+    
+/* --------------------- Get Connected --------------------------- */
+    
+    
+    .connecth1{
+        width: 100%;
+        margin-top:20px;
+        position: relative;
+    }
+    
+    .upper{
+        display:block;
+        width: 100%;
+        height: 45%;
+    }
+    
+    .upper p{
+        font-size: 12pt;
+        padding-top:30px;
+    }
+    
+    .lower{
+        display:block;
+        width: 100%;
+        height: 50%;
+        
+        background-image: url(images/feet.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+    
+    .lower:hover{
+        background-image: url(images/feet.jpg);
+    }
+    
+    
+    .gram{
+        width:74%;
+        margin-left: 13%;
+        margin-top: 50px;
+    }
+    
+    .lower .whitebox{
+        width:80%;
+        margin-left:10%;
+    }
+    
+    
+/* --------------------- Ask Doc ----------------------------- */
+    
+    
+    .askbg{
+        background-position: center;
+    }
+    
+    .askbg h1{
+        margin: 15px 0 0 0;
+        text-align: center;
+        font-size:1.5em;
+    }
+    
+    form{
+        width:280px;
+    }
+    
+    input[type=text],input[type=email]{
+        width:170px;
+    }
+    
+    textarea{
+        width:170px;
+    }
+    
+    
+/* -------------------- Individual Board Page ------------------------ */
+    
+    .bluebg{
+        height: 75em;
+    }
+    
+    .boardhead{
+        display:block;
+        
+        position:relative;
+        
+        margin: 10px auto 0;
+        
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    
+    .showcase{
+        margin-top:20px;
+        margin-left: 2.5%;
+        width:200px;
+    }
+    
+    .description{
+        width:90%;
+        
+        margin-left:5%;
+        margin-right:5%;
+        margin-top:20px;
+        
+    }
+    
+    .description h2{
+        font-size: 15pt;
+    }
+    
+    .description p{
+        font-size: 1opt;
+    }
+    
+    
+    .slider-for{
+        width:200px;
+        height: auto;
+        
+        margin:0 auto;
+        
+        float:none;
+        display: block;
+    }
+    
+    .slider-for img{
+        width:200px;
+        height:auto;
+        
+        margin: 0 auto ;
+    }
+    
+    .v12 img{
+        width:235px;
+    }
+    
+    .slider-nav{
+        margin:0 auto;
+        float:left;
+        width:300px;
+    }
+    
+    .slider-nav div{
+        display:inline-block;
+        width:300px;
+        float:left;
+        
+        margin:0 auto;
+    }
+    
+    .slider-nav img{
+        height: 175px;
+        float:left;
+        display: inline-block;
+    }
+    
+    .slider-nav img:hover{
+        height: 175px;
+    }
+    
+}
+

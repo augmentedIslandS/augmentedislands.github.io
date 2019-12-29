@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.surfprescriptions.com/gmoney.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2019 18:04:58 GMT -->
+
+<head>
+  <title>Surf Prescriptions Surfboards</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="reset.css" type="text/css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <script src="scripts.js"></script>
+
+  <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+  <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+  <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
+
+  <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+  <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <nav class="clearfix topnav">
+      <ul id="myTopnav" class="topnav">
+        <li><a class="logo" href="index-2.html"><img src="images/logo.png" alt="surf rx logo"></a></li>
+        <li><a href="boards.html">boards</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="connect.html">get connected</a></li>
+        <li><a href="retailers.html">retailers</a></li>
+        <li><a href="ask.html">ask doc</a></li>
+
+        <li class="location">
+          <a href="https://www.google.com/maps/place/17671+Metzler+Ln,+Huntington+Beach,+CA+92647/@33.7061574,-118.0010292,17z/data=!3m1!4b1!4m5!3m4!1s0x80dd26925c4cabc5:0x4f3edf30b0c2db5c!8m2!3d33.7061574!4d-117.9988405" target="_blank">17671
+            Metzler Lane, A-10<br>
+            Huntington Beach, CA 92647</a>
+          <p>&#40;714&#41;842&#45;4550</p>
+        </li>
+
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+
+      </ul>
+      <p class="showmobile">SURF PRESCRIPTIONS SURFBOARDS</p>
+    </nav>
+
+
+    <div class="fullbg bluebg">
+
+      <h1 class="boardhead">WHAT&#39;S YOUR PRESCRIPTION?</h1>
+
+      <div class="showcase slider-for">
+        <div>
+          <img src="boards/gmoneyii.png" alt="gmoney II front view">
+        </div>
+        <div>
+          <img src="boards/gmoneyii-back.png" alt="gmoney II back view">
+        </div>
+        <div>
+          <model-viewer poster="/Imgs/Posters/surf_01.png" src="/Models/SurfBoards/SurfBoard_01.gltf" ios-src="/Models/SurfBoards/SurfBoard_01.usdz" alt="Surfboard" background-color="#FFFFFF" shadow-intensity="1" camera-controls auto-rotate ar>
+          </model-viewer>
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <div>
+          <img src="boards/gmoneyii.png" alt="gmoney II front view">
+        </div>
+        <div>
+          <img src="boards/gmoneyii-back.png" alt="gmoney II back view">
+        </div>
+        <div>
+          <img src="Imgs/Posters/surf_01_gsite.png" alt="gmoney II back AR view">
+        </div>
+      </div>
+
+      <div class="description">
+        <h2 class="boardpage">G-MONEY II</h2>
+        <p>The G-Money II is the ultimate big wave board. It has a full almost funboard nose outline and rocker with a standard high performance pin tail shape and rocker. This gives you the paddling power to get into bigger waves then maneuver the
+          board with ease once you’re up on it. We’ve made them from 5’10” to 10’5”. Depending on the size you get it, it will work in anything from waist high to well over double overhead. If you’re looking to charge, this is the board for you.</p>
+
+        <a href="ask.html">
+          <p>ASK DOC ABOUT IT</p>
+        </a>
+        <a href="boards.html">
+          <p>BACK TO BOARDS</p>
+        </a>
+      </div>
+    </div>
+  </div> <!-- end of Wrapper -->
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js">
+  </script>
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js">
+  </script>
+
+  <!-- slick slider for showing boards -->
+  <script type="text/javascript" src="code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
+    });
+  </script>
+
+
+</body>
+
+
+
+<!-- Mirrored from www.surfprescriptions.com/gmoney.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2019 18:04:59 GMT -->
+
+</html>
