@@ -450,7 +450,7 @@ h2{
     height:613px;
 }
 
-.slider-for model-viewer{
+.modelshow{
     height:613px;
 }
 
@@ -1027,7 +1027,7 @@ input[type=submit]:hover{
         margin: 0 auto ;
     }
 
-    .slider-for model-viewer{
+    .modelshow{
         width:240px;
         height:auto;
 
@@ -1581,8 +1581,8 @@ input[type=submit]:hover{
         margin: 0 auto ;
     }
 
-    .slider-for model-viewer{
-        width:200px;
+    .modelshow{
+        width:auto;
         height:auto;
 
         margin: 0 auto ;
