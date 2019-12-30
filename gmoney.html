@@ -116,13 +116,15 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 0,
+        slidesToScroll: 0,
         arrows: false,
         fade: true,
         asNavFor: '.slider-nav'
       });
       $('.slider-nav').slick({
+        slidesToShow: 0,
+        slidesToScroll: 0,
         asNavFor: '.slider-for',
         dots: true,
         centerMode: true,
