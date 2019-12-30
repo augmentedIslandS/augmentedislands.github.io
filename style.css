@@ -1029,7 +1029,7 @@ input[type=submit]:hover{
 
     .modelshow{
         width:240px;
-        height:auto;
+        height:400px;
 
         margin: 0 auto ;
     }
@@ -1582,8 +1582,8 @@ input[type=submit]:hover{
     }
 
     .modelshow{
-        width:auto;
-        height:auto;
+        width:200px;
+        height:300px;
 
         margin: 0 auto ;
     }
