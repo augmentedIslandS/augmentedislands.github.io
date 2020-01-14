@@ -62,34 +62,36 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Body.003",
+            "name" : "Body.004",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.803921639919281,
-                    0.803921639919281,
-                    0.803921639919281,
+                    0.7960785031318665,
+                    0.7960785031318665,
+                    0.7960785031318665,
                     1
                 ],
-                "roughnessFactor" : 0.8318207263946533
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.7171573042869568
             }
         },
         {
             "doubleSided" : true,
-            "name" : "Props.003",
+            "name" : "Props.004",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.019607843831181526,
-                    0.019607843831181526,
-                    0.019607843831181526,
+                    0.011764707043766975,
+                    0.011764707043766975,
+                    0.011764707043766975,
                     1
                 ],
-                "roughnessFactor" : 0.3272828757762909
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.7171573042869568
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Mesh.003",
+            "name" : "Mesh.004",
             "primitives" : [
                 {
                     "attributes" : {
