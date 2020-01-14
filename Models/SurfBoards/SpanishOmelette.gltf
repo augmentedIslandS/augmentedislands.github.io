@@ -62,7 +62,7 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Body.004",
+            "name" : "Body.009",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.7960785031318665,
@@ -76,7 +76,7 @@
         },
         {
             "doubleSided" : true,
-            "name" : "Props.004",
+            "name" : "Props.009",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.011764707043766975,
@@ -91,7 +91,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Mesh.004",
+            "name" : "Mesh.009",
             "primitives" : [
                 {
                     "attributes" : {
