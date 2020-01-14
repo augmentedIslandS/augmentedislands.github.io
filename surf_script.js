@@ -13,7 +13,7 @@ function changeIt(number) {
       poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/SurfBoards/SpanishOmelette.gltf";
       ios_src = "Models/SurfBoards/SpanishOmelette.usdz";
-      alt_comment = "Spanish Omelette 02";
+      alt_comment = "Spanish Omelette 03";
       break;
     case 1:
       poster = "/Imgs/SurfPosters/Seahawk.png";
