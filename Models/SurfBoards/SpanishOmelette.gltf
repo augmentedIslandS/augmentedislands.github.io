@@ -71,7 +71,7 @@
                     1
                 ],
                 "metallicFactor" : 1,
-                "roughnessFactor" : 0.7171573042869568
+                "roughnessFactor" : 0.40806639194488525
             }
         },
         {
@@ -85,7 +85,7 @@
                     1
                 ],
                 "metallicFactor" : 1,
-                "roughnessFactor" : 0.7171573042869568
+                "roughnessFactor" : 0.44897547364234924
             }
         }
     ],
