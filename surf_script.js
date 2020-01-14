@@ -13,31 +13,31 @@ function changeIt(number) {
       poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/SurfBoards/SpanishOmelette.gltf";
       ios_src = "Models/SurfBoards/SpanishOmelette.usdz";
-      alt_comment = "Spanish Omelette 06";
+      alt_comment = "Spanish Omelette 07";
       break;
     case 1:
       poster = "/Imgs/SurfPosters/Seahawk.png";
       src = "/Models/SurfBoards/Seahawk.gltf";
       ios_src = "/Models/SurfBoards/Seahawk.usdz";
-      alt_comment = "Seahawk 02";
+      alt_comment = "Seahawk 03";
       break;
     case 2:
       poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
       src = "/Models/SurfBoards/OldSchoolTwin.gltf";
       ios_src = "/Models/SurfBoards/OldSchoolTwin.usdz";
-      alt_comment = "Old School Twin 02";
+      alt_comment = "Old School Twin 03";
       break;
     case 3:
       poster = "/Imgs/SurfPosters/DeadlyFlyingTurtle.png";
       src = "/Models/SurfBoards/DeadlyFlyingTurtle.gltf";
       ios_src = "/Models/SurfBoards/DeadlyFlyingTurtle.usdz";
-      alt_comment = "Deadly Flying Turtle 02";
+      alt_comment = "Deadly Flying Turtle 03";
       break;
     case 4:
       poster = "/Imgs/SurfPosters/Bushwacker.png";
       src = "/Models/SurfBoards/Bushwacker.gltf";
       ios_src = "/Models/SurfBoards/Bushwacker.usdz";
-      alt_comment = "Bushwacker 02";
+      alt_comment = "Bushwacker 03";
       break;    
   }
 
