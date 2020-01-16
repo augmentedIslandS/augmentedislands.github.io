@@ -11,38 +11,38 @@ function changeIt(number) {
 
     case 0:
       poster = "Imgs/SurfPosters/SpanishOmelette.png";
-      src = "Models/SurfBoards/SpanishOmelette.gltf";
-      ios_src = "Models/SurfBoards/SpanishOmelette.usdz";
+      src = "Models/Surfboards/SpanishOmelette.gltf";
+      ios_src = "Models/Surfboards/SpanishOmelette.usdz";
       alt_comment = "Spanish Omelette 11";
       break;
     case 1:
       poster = "/Imgs/SurfPosters/Seahawk.png";
-      src = "/Models/SurfBoards/Seahawk.gltf";
-      ios_src = "/Models/SurfBoards/Seahawk.usdz";
+      src = "/Models/Surfboards/Seahawk.gltf";
+      ios_src = "/Models/Surfboards/Seahawk.usdz";
       alt_comment = "Seahawk 04";
       break;
     case 2:
       poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "/Models/SurfBoards/OldSchoolTwin.gltf";
-      ios_src = "/Models/SurfBoards/OldSchoolTwin.usdz";
+      src = "/Models/Surfboards/OldSchoolTwin.gltf";
+      ios_src = "/Models/Surfboards/OldSchoolTwin.usdz";
       alt_comment = "Old School Twin 04";
       break;
     case 3:
       poster = "/Imgs/SurfPosters/DeadlyFlyingTurtle.png";
-      src = "/Models/SurfBoards/DeadlyFlyingTurtle.gltf";
-      ios_src = "/Models/SurfBoards/DeadlyFlyingTurtle.usdz";
+      src = "/Models/Surfboards/DeadlyFlyingTurtle.gltf";
+      ios_src = "/Models/Surfboards/DeadlyFlyingTurtle.usdz";
       alt_comment = "Deadly Flying Turtle 04";
       break;
     case 4:
       poster = "/Imgs/SurfPosters/Bushwacker.png";
-      src = "/Models/SurfBoards/Bushwacker.gltf";
-      ios_src = "/Models/SurfBoards/Bushwacker.usdz";
+      src = "/Models/Surfboards/Bushwacker.gltf";
+      ios_src = "/Models/Surfboards/Bushwacker.usdz";
       alt_comment = "Bushwacker 04";
       break;   
     case 5:
       poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "/Models/SurfBoards/OldSchoolTwin_Tex.gltf";
-      ios_src = "/Models/SurfBoards/OldSchoolTwin_Tex.usdz";
+      src = "/Models/Surfboards/OldSchoolTwin_Tex.gltf";
+      ios_src = "/Models/Surfboards/OldSchoolTwin_Tex.usdz";
       alt_comment = "Old School Twin Texture 01";
       break; 
   }
