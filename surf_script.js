@@ -38,7 +38,13 @@ function changeIt(number) {
       src = "/Models/SurfBoards/Bushwacker.gltf";
       ios_src = "/Models/SurfBoards/Bushwacker.usdz";
       alt_comment = "Bushwacker 04";
-      break;    
+      break;   
+    case 5:
+      poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
+      src = "/Models/SurfBoards/OldSchoolTwin_Tex.gltf";
+      ios_src = "/Models/SurfBoards/OldSchoolTwin_Tex.usdz";
+      alt_comment = "Old School Twin Texture 01";
+      break; 
   }
 
   document.getElementById("currentModel").remove();
