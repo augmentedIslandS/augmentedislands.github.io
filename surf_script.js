@@ -12,7 +12,7 @@ function changeIt(number) {
     case 0:
       poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/SurfBoards/SpanishOmelette.gltf";
-      ios_src = "Models/SurfBoards/1_SpanishOmelette.usdz";
+      ios_src = "Models/SurfBoards/SpanishOmelette.usdz";
       alt_comment = "Spanish Omelette 11";
       break;
     case 1:
