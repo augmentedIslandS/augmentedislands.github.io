@@ -63,8 +63,8 @@ function changeIt(number) {
   //document.getElementById("modelModule").remove();
   //document.getElementById("modelNoModule").remove();
 
-  //reload_mv('https://unpkg.com/@google/model-viewer@v0.8.1/dist/model-viewer.js', 0);
-  //reload_mv('https://unpkg.com/@google/model-viewer@v0.8.1/dist/model-viewer-legacy.js', 1);
+  //reload_mv('https://unpkg.com/@google/model-viewer@v0.8.0/dist/model-viewer.js', 0);
+  //reload_mv('https://unpkg.com/@google/model-viewer@v0.8.0/dist/model-viewer-legacy.js', 1);
 }
 
 function reload_mv(srcUrlContains, isModule) {
