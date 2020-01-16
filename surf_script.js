@@ -16,33 +16,33 @@ function changeIt(number) {
       alt_comment = "Spanish Omelette 11";
       break;
     case 1:
-      poster = "/Imgs/SurfPosters/Seahawk.png";
-      src = "/Models/Surfboards/Seahawk.gltf";
-      ios_src = "/Models/Surfboards/Seahawk.usdz";
+      poster = "Imgs/SurfPosters/Seahawk.png";
+      src = "Models/Surfboards/Seahawk.gltf";
+      ios_src = "Models/Surfboards/Seahawk.usdz";
       alt_comment = "Seahawk 04";
       break;
     case 2:
-      poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "/Models/Surfboards/OldSchoolTwin.gltf";
-      ios_src = "/Models/Surfboards/OldSchoolTwin.usdz";
+      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
+      src = "Models/Surfboards/OldSchoolTwin.gltf";
+      ios_src = "Models/Surfboards/OldSchoolTwin.usdz";
       alt_comment = "Old School Twin 04";
       break;
     case 3:
-      poster = "/Imgs/SurfPosters/DeadlyFlyingTurtle.png";
-      src = "/Models/Surfboards/DeadlyFlyingTurtle.gltf";
-      ios_src = "/Models/Surfboards/DeadlyFlyingTurtle.usdz";
+      poster = "Imgs/SurfPosters/DeadlyFlyingTurtle.png";
+      src = "Models/Surfboards/DeadlyFlyingTurtle.gltf";
+      ios_src = "Models/Surfboards/DeadlyFlyingTurtle.usdz";
       alt_comment = "Deadly Flying Turtle 04";
       break;
     case 4:
-      poster = "/Imgs/SurfPosters/Bushwacker.png";
-      src = "/Models/Surfboards/Bushwacker.gltf";
-      ios_src = "/Models/Surfboards/Bushwacker.usdz";
+      poster = "Imgs/SurfPosters/Bushwacker.png";
+      src = "Models/Surfboards/Bushwacker.gltf";
+      ios_src = "Models/Surfboards/Bushwacker.usdz";
       alt_comment = "Bushwacker 04";
       break;   
     case 5:
-      poster = "/Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "/Models/Surfboards/OldSchoolTwin_Tex.gltf";
-      ios_src = "/Models/Surfboards/OldSchoolTwin_Tex.usdz";
+      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
+      src = "Models/Surfboards/OldSchoolTwin_Tex.gltf";
+      ios_src = "Models/Surfboards/OldSchoolTwin_Tex.usdz";
       alt_comment = "Old School Twin Texture 01";
       break; 
   }
