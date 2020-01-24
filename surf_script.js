@@ -10,40 +10,40 @@ function changeIt(number) {
   switch (number) {
 
     case 0:
-      poster = "Imgs/SurfPosters/SpanishOmelette.png";
-      src = "Models/Surfboards/SpanishOmelette.gltf";
-      ios_src = "Models/Surfboards/SpanishOmelette.usdz";
-      alt_comment = "Spanish Omelette 12";
-      break;
+      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
+      src = "Models/Surfboards/OldSchoolTwin_Tex.gltf";
+      ios_src = "Models/Surfboards/OldSchoolTwin_Tex.usdz";
+      alt_comment = "Old School Twin Texture 01";
+      break; 
     case 1:
       poster = "Imgs/SurfPosters/Seahawk.png";
       src = "Models/Surfboards/Seahawk.gltf";
       ios_src = "Models/Surfboards/Seahawk.usdz";
-      alt_comment = "Seahawk 05";
+      alt_comment = "Seahawk 01";
       break;
     case 2:
-      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "Models/Surfboards/OldSchoolTwin.gltf";
-      ios_src = "Models/Surfboards/OldSchoolTwin.usdz";
-      alt_comment = "Old School Twin 05";
-      break;
-    case 3:
       poster = "Imgs/SurfPosters/DeadlyFlyingTurtle.png";
       src = "Models/Surfboards/DeadlyFlyingTurtle.gltf";
       ios_src = "Models/Surfboards/DeadlyFlyingTurtle.usdz";
-      alt_comment = "Deadly Flying Turtle 05";
+      alt_comment = "Deadly Flying Turtle 01";
+      break;
+    case 3:
+      poster = "Imgs/SurfPosters/SpicyFlyingTurtle.png";
+      src = "Models/Surfboards/SpicyFlyingTurtle.gltf";
+      ios_src = "Models/Surfboards/SpicyFlyingTurtle.usdz";
+      alt_comment = "Spicy Flying Turtle 01";
       break;
     case 4:
       poster = "Imgs/SurfPosters/Bushwacker.png";
       src = "Models/Surfboards/Bushwacker.gltf";
       ios_src = "Models/Surfboards/Bushwacker.usdz";
-      alt_comment = "Bushwacker 05";
+      alt_comment = "Bushwacker 01";
       break;   
     case 5:
-      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "Models/Surfboards/OldSchoolTwin_Tex.gltf";
-      ios_src = "Models/Surfboards/OldSchoolTwin_Tex.usdz";
-      alt_comment = "Old School Twin Texture 02";
+      poster = "Imgs/SurfPosters/F-Money.png";
+      src = "Models/Surfboards/F-Money.gltf";
+      ios_src = "Models/Surfboards/F-Money.usdz";
+      alt_comment = "F-Money 01";
       break; 
   }
 
