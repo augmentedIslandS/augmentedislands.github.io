@@ -11,8 +11,8 @@ function changeIt(number) {
 
     case 0:
       poster = "Imgs/SurfPosters/OldSchoolTwin.png";
-      src = "Models/Surfboards/OldSchoolTwin_Tex.gltf";
-      ios_src = "Models/Surfboards/OldSchoolTwin_Tex.usdz";
+      src = "Models/Surfboards/OldSchoolTwin.gltf";
+      ios_src = "Models/Surfboards/OldSchoolTwin.usdz";
       alt_comment = "Old School Twin Texture 01";
       break; 
     case 1:
