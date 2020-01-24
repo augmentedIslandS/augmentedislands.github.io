@@ -10,37 +10,37 @@ function changeIt(number) {
   switch (number) {
 
     case 0:
-      poster = "Imgs/SurfPosters/OldSchoolTwin.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/OldSchoolTwin.gltf";
       ios_src = "Models/Surfboards/OldSchoolTwin.usdz";
       alt_comment = "Old School Twin Texture 01";
       break; 
     case 1:
-      poster = "Imgs/SurfPosters/Seahawk.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/Seahawk.gltf";
       ios_src = "Models/Surfboards/Seahawk.usdz";
       alt_comment = "Seahawk 01";
       break;
     case 2:
-      poster = "Imgs/SurfPosters/DeadlyFlyingTurtle.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/DeadlyFlyingTurtle.gltf";
       ios_src = "Models/Surfboards/DeadlyFlyingTurtle.usdz";
       alt_comment = "Deadly Flying Turtle 01";
       break;
     case 3:
-      poster = "Imgs/SurfPosters/SpicyFlyingTurtle.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/SpicyFlyingTurtle.gltf";
       ios_src = "Models/Surfboards/SpicyFlyingTurtle.usdz";
       alt_comment = "Spicy Flying Turtle 01";
       break;
     case 4:
-      poster = "Imgs/SurfPosters/Bushwacker.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/Bushwacker.gltf";
       ios_src = "Models/Surfboards/Bushwacker.usdz";
       alt_comment = "Bushwacker 01";
       break;   
     case 5:
-      poster = "Imgs/SurfPosters/F-Money.png";
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/F-Money.gltf";
       ios_src = "Models/Surfboards/F-Money.usdz";
       alt_comment = "F-Money 01";
