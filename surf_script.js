@@ -45,6 +45,12 @@ function changeIt(number) {
       ios_src = "Models/Surfboards/F-Money.usdz";
       alt_comment = "F-Money 01";
       break; 
+    case 6:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/Snowboard.gltf";
+      ios_src = "Models/Surfboards/Snowboard.usdz";
+      alt_comment = "Wide Wise 2020";
+      break; 
   }
 
   document.getElementById("currentModel").remove();
