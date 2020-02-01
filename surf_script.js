@@ -113,6 +113,42 @@ function changeIt(number) {
       break; 
     case 17:
       //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/G-MoneyII.gltf";
+      ios_src = "Models/Surfboards/G-MoneyII.usdz";
+      alt_comment = "G-Money II";
+      break; 
+    case 18:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/G-MoneyIIGun.gltf";
+      ios_src = "Models/Surfboards/G-MoneyIIGun.usdz";
+      alt_comment = "G-Money II Gun";
+      break; 
+    case 19:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/NoBadDaysThang.gltf";
+      ios_src = "Models/Surfboards/NoBadDaysThang.usdz";
+      alt_comment = "No Bad Days Thang";
+      break; 
+    case 20:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/SpanishOmelette.gltf";
+      ios_src = "Models/Surfboards/SpanishOmelette.usdz";
+      alt_comment = "Spanish Omelette";
+      break; 
+    case 21:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/Tur-TorrenII.gltf";
+      ios_src = "Models/Surfboards/Tur-TorrenII.usdz";
+      alt_comment = "Tur-Torren II";
+      break; 
+    case 22:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
+      src = "Models/Surfboards/Twin82.gltf";
+      ios_src = "Models/Surfboards/Twin82.usdz";
+      alt_comment = "Twin 82";
+      break; 
+    case 23:
+      //poster = "Imgs/SurfPosters/SpanishOmelette.png";
       src = "Models/Surfboards/Snowboard.gltf";
       ios_src = "Models/Surfboards/Snowboard.usdz";
       alt_comment = "Wide Wise 2020";
