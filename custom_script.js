@@ -13,7 +13,7 @@ function changeIt(number) {
         //poster = "Imgs/Posters/shoes_poster.png";
         src = "Models/NikeShoes/NikeShoe.gltf";
         ios_src = "Models/NikeShoes/NikeShoe.usdz";
-        alt_comment = "Nike AR Shoes 01";
+        alt_comment = "Nike Shoes 01";
       break;
     case 1:
         //poster = "Imgs/Posters/dress1_poster.png";
