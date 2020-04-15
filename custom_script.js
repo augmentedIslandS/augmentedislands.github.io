@@ -8,7 +8,7 @@ function changeIt(number) {
   var alt_comment = "";
 
   switch (number) {
-
+/*
     case 0:
         poster = "Imgs/Posters/shoes_poster.png";
         src = "Models/NikeShoes/NikeShoe.gltf";
@@ -27,25 +27,26 @@ function changeIt(number) {
         ios_src = "Models/Clothing/Dress2.usdz";
         alt_comment = "Dress 2 HD";
       break;
-    case 3:
+*/
+    case 0:
         poster = "Imgs/Posters/casual_poster.png";
         src = "Models/Clothing/CasualOutfit.gltf";
         ios_src = "Models/Clothing/CasualOutfit.usdz";
         alt_comment = "Casual HD";
       break;
-    case 4:
+    case 1:
         poster = "Imgs/Posters/swimsuitA_poster.png";
         src = "Models/Swimsuits/Swimsuit_A.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_A.usdz";
         alt_comment = "Swimsuit_A";
       break;
-    case 5:
+    case 2:
         poster = "Imgs/Posters/swimsuitB_poster.png";
         src = "Models/Swimsuits/Swimsuit_B.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_B.usdz";
         alt_comment = "Swimsuit_B";
       break;
-    case 6:
+    case 3:
         poster = "Imgs/Posters/swimsuitC_poster.png";
         src = "Models/Swimsuits/Swimsuit_C.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_C.usdz";
