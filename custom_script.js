@@ -8,7 +8,7 @@ function changeIt(number) {
   var alt_comment = "";
 
   switch (number) {
-/*
+/**
     case 0:
         poster = "Imgs/Posters/shoes_poster.png";
         src = "Models/NikeShoes/NikeShoe.gltf";
@@ -145,11 +145,6 @@ function changeIt(number) {
 
   document.getElementById("modelContainer").appendChild(modelviewer);
 
-  //document.getElementById("modelModule").remove();
-  //document.getElementById("modelNoModule").remove();
-
-  //reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js', 0);
-  //reload_mv('https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js', 1);
 }
 
 function reload_mv(srcUrlContains, isModule) {
