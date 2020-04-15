@@ -22,7 +22,7 @@ function changeIt(number) {
         alt_comment = "Dress 01";
       break;
     case 2:
-        poster = "Imgs/Posters/dress2_poster.png";
+        //poster = "Imgs/Posters/dress2_poster.png";
         src = "Models/Clothing/Dress2.gltf";
         ios_src = "Models/Clothing/Dress2.usdz";
         alt_comment = "Dress 01";
