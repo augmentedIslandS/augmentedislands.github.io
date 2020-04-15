@@ -29,29 +29,29 @@ function changeIt(number) {
       break;
 */
     case 0:
-        poster = "Imgs/Posters/casual_poster.png";
+        //poster = "Imgs/Posters/casual_poster.png";
         src = "Models/Clothing/CasualOutfit.gltf";
         ios_src = "Models/Clothing/CasualOutfit.usdz";
         alt_comment = "Casual HD";
       break;
     case 1:
-        poster = "Imgs/Posters/swimsuitA_poster.png";
+        //poster = "Imgs/Posters/swimsuitA_poster.png";
         src = "Models/Swimsuits/Swimsuit_A.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_A.usdz";
         alt_comment = "Swimsuit_A";
       break;
     case 2:
-        poster = "Imgs/Posters/swimsuitB_poster.png";
+        //poster = "Imgs/Posters/swimsuitB_poster.png";
         src = "Models/Swimsuits/Swimsuit_B.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_B.usdz";
         alt_comment = "Swimsuit_B";
       break;
     case 3:
-        poster = "Imgs/Posters/swimsuitC_poster.png";
+        //poster = "Imgs/Posters/swimsuitC_poster.png";
         src = "Models/Swimsuits/Swimsuit_C.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_C.usdz";
         alt_comment = "Swimsuit_C";
-		  break;
+	 break;
 
 /*
     case 7:
