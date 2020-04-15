@@ -10,58 +10,118 @@ function changeIt(number) {
   switch (number) {
 
     case 0:
-      poster = "Imgs/Posters/shoes_poster.png";
-      src = "Models/NikeShoes/NikeShoe1.gltf";
-      ios_src = "Models/NikeShoes/NikeShoe1.usdz";
-      alt_comment = "Nike AR Shoes HD";
+        poster = "Imgs/Posters/shoes_poster.png";
+        src = "Models/NikeShoes/NikeShoe.gltf";
+        ios_src = "Models/NikeShoes/NikeShoe.usdz";
+        alt_comment = "Nike AR Shoes HD";
       break;
     case 1:
-      poster = "/Imgs/Posters/dress1_poster.png";
-      src = "/Models/Clothing/Dress1.gltf";
-      ios_src = "/Models/Clothing/Dress1.usdz";
-      alt_comment = "Dress 1 HD";
+        poster = "Imgs/Posters/dress1_poster.png";
+        src = "Models/Clothing/Dress1.gltf";
+        ios_src = "Models/Clothing/Dress1.usdz";
+        alt_comment = "Dress 1 HD";
       break;
     case 2:
-      poster = "/Imgs/Posters/dress2_poster.png";
-      src = "/Models/Clothing/Dress2.gltf";
-      ios_src = "/Models/Clothing/Dress2.usdz";
-      alt_comment = "Dress 2 HD";
+        poster = "Imgs/Posters/dress2_poster.png";
+        src = "Models/Clothing/Dress2.gltf";
+        ios_src = "Models/Clothing/Dress2.usdz";
+        alt_comment = "Dress 2 HD";
       break;
     case 3:
-      poster = "/Imgs/Posters/burger_poster.png";
-      src = "/Models/Misc/Burger/burger.glb";
-      ios_src = "/Models/Misc/Burger/burger.usdz";
-      alt_comment = "Burger Ultra HD";
+        poster = "Imgs/Posters/casual_poster.png";
+        src = "Models/Clothing/CasualOutfit.gltf";
+        ios_src = "Models/Clothing/CasualOutfit.usdz";
+        alt_comment = "Casual HD";
       break;
     case 4:
-      poster = "/Imgs/Posters/casual_poster.png";
-      src = "/Models/Clothing/CasualOutfit.gltf";
-      ios_src = "/Models/Clothing/CasualOutfit.usdz";
-      alt_comment = "Casual HD";
+        poster = "Imgs/Posters/swimsuitA_poster.png";
+        src = "Models/Swimsuits/Swimsuit_A.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_A.usdz";
+        alt_comment = "Swimsuit_A";
       break;
     case 5:
-      poster = "/Imgs/Posters/pipe_poster.png";
-      src = "/Models/Pipe/USPipe_CrossSection.gltf";
-      ios_src = "/Models/Pipe/USPipe_CrossSection.usdz";
-      alt_comment = "U.S. Pipe CrossSection 1.2";
+        poster = "Imgs/Posters/swimsuitB_poster.png";
+        src = "Models/Swimsuits/Swimsuit_B.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_B.usdz";
+        alt_comment = "Swimsuit_B";
       break;
     case 6:
-    poster = "/Imgs/Posters/pipeemsemble_poster.png";
-    src = "/Models/Pipe/USPipe_Ensamble.gltf";
-    ios_src = "/Models/Pipe/USPipe_Ensamble.usdz";
-    alt_comment = "U.S. Pipe Emsemble Product 1.2";
+        poster = "Imgs/Posters/swimsuitC_poster.png";
+        src = "Models/Swimsuits/Swimsuit_C.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_C.usdz";
+        alt_comment = "Swimsuit_C";
       break;
     case 7:
-    poster = "/Imgs/Posters/pipefull_poster.png";
-    src = "/Models/Pipe/USPipe_Full.gltf";
-    ios_src = "/Models/Pipe/USPipe_Full.usdz";
-    alt_comment = "U.S. Pipe Emsemble Full 1.2";
+        poster = "Imgs/Posters/swimsuitD_poster.png";
+        src = "Models/Swimsuits/Swimsuit_D.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_D.usdz";
+        alt_comment = "Swimsuit_D";
       break;
     case 8:
-    poster = "/Imgs/Posters/surf_01.png";
-    src = "/Models/SurfBoards/SurfBoard_01.gltf";
-    ios_src = "/Models/SurfBoards/SurfBoard_01.usdz";
-    alt_comment = "Surf Prescriptions Test 02";
+        poster = "Imgs/Posters/swimsuitE_poster.png";
+        src = "Models/Swimsuits/Swimsuit_E.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_E.usdz";
+        alt_comment = "Swimsuit_E";
+      break;
+    case 9:
+        poster = "Imgs/Posters/swimsuitF_poster.png";
+        src = "Models/Swimsuits/Swimsuit_F.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_F.usdz";
+        alt_comment = "Swimsuit_F";
+      break;
+    case 10:
+        poster = "Imgs/Posters/burger_poster.png";
+        src = "Models/Misc/Burger/burger.glb";
+        ios_src = "Models/Misc/Burger/burger.usdz";
+        alt_comment = "Burger";        
+      break;
+    case 11:
+        poster = "Imgs/Posters/cake_poster.png";
+        src = "Models/Misc/Cake/Cake.glb";
+        ios_src = "Models/Misc/Cake/Cake.usdz";
+        alt_comment = "Cake;        
+      break;
+    case 12:
+        poster = "Imgs/Posters/pipe_poster.png";
+        src = "Models/Pipe/USPipe_CrossSection.gltf";
+        ios_src = "Models/Pipe/USPipe_CrossSection.usdz";
+        alt_comment = "U.S. Pipe CrossSection 1.2";
+      break;
+    case 13:
+        poster = "Imgs/Posters/pipeemsemble_poster.png";
+        src = "Models/Pipe/USPipe_Ensamble.gltf";
+        ios_src = "Models/Pipe/USPipe_Ensamble.usdz";
+        alt_comment = "U.S. Pipe Emsemble Product 1.2";
+      break;
+    case 14:
+        poster = "Imgs/Posters/pipefull_poster.png";
+        src = "Models/Pipe/USPipe_Full.gltf";
+        ios_src = "Models/Pipe/USPipe_Full.usdz";
+        alt_comment = "U.S. Pipe Emsemble Full 1.2";
+      break;
+    case 15:
+        poster = "Imgs/Posters/pipefull_poster.png";
+        src = "Models/NikeShoes/Nike_Low_AnimTest_1.gltf";
+        ios_src = "Models/NikeShoes/Nike_Low_AnimTest_1.usdz";
+        alt_comment = "Nike Anim Test 02";
+      break;
+    case 16:
+        poster = "Imgs/Posters/pipefull_poster.png";
+        src = "Models/Smuckers/Milkbone.gltf";
+        ios_src = "Models/Smuckers/Milkbone.usdz";
+        alt_comment = "Smuckers Milkbone 01";
+      break;
+    case 17:
+        poster = "Imgs/Posters/pipefull_poster.png";
+        src = "Models/Smuckers/Uncrustables.gltf";
+        ios_src = "Models/Smuckers/Uncrustables.usdz";
+        alt_comment = "Smuckers Uncrustables 01";
+      break;
+    case 18:
+        poster = "Imgs/Posters/pipefull_poster.png";
+        src = "Models/Smuckers/Jam.gltf";
+        ios_src = "Models/Smuckers/Jam.usdz";
+        alt_comment = "Smuckers Jam 01";
       break;
   }
 
