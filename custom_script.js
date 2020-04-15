@@ -51,7 +51,9 @@ function changeIt(number) {
         src = "Models/Swimsuits/Swimsuit_C.gltf";
         ios_src = "Models/Swimsuits/Swimsuit_C.usdz";
         alt_comment = "Swimsuit_C";
-      break;
+		  break;
+
+/*
     case 7:
         poster = "Imgs/Posters/swimsuitD_poster.png";
         src = "Models/Swimsuits/Swimsuit_D.gltf";
@@ -124,6 +126,8 @@ function changeIt(number) {
         ios_src = "Models/Smuckers/Jam.usdz";
         alt_comment = "Smuckers Jam 01";
       break;
+
+*/
   }
 
   document.getElementById("currentModel").remove();
