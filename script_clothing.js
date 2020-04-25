@@ -33,6 +33,18 @@ function changeIt(number) {
         ios_src = "Models/Swimsuits/Swimsuit_D.usdz";
         alt_comment = "Swimsuit";
       break;
+    case 4:
+        //poster = "Imgs/Posters/swimsuitD_poster.png";
+        src = "Models/Swimsuits/Swimsuit_JDD.gltf";
+        ios_src = "Models/Swimsuits/Swimsuit_JDD.usdz";
+        alt_comment = "Swimsuit Juan De Dios";
+      break;
+    case 5:
+          //poster = "Imgs/Posters/swimsuitD_poster.png";
+          src = "Models/Swimsuits/Swimsuit_M_JDD.gltf";
+          ios_src = "Models/Swimsuits/Swimsuit_M_JDD.usdz";
+          alt_comment = "Swimsuit Juan De Dios";
+        break;
   }
 
   document.getElementById("currentModel").remove();
