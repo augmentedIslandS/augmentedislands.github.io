@@ -122,6 +122,12 @@ function changeIt(number) {
         src = "Models/Smuckers/Jam.gltf";
         ios_src = "Models/Smuckers/Jam.usdz";
         alt_comment = "Smuckers Jam 01";
+          break;
+    case 19:
+        //poster = "Imgs/Posters/pipefull_poster.png";
+          src = "Models/Gibson/Gibson.gltf";
+          ios_src = "Models/Gibson/Gibson.usdz";
+          alt_comment = "Gibson Les Paul Guitar";
       break;
   }
 
