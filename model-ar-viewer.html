@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>&lt;model-viewer&gt; responsive example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-bundle.js"></script>
+</head>
+<body>
+  <div class="full-size">
+    <model-viewer class="full-size" src="/Models/Furniture/3tier.glb"
+              ios-src="/Models/Furniture/3tier.usdz"
+              alt="3 Tier"
+              background-color="#FF6F59"
+              shadow-intensity="1"
+              ar
+              xr-environment
+              ar-scale="fixed"
+              camera-controls></model-viewer>
+  </div>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+</body>
+</html>
