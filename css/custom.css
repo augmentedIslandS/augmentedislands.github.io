@@ -29,3 +29,7 @@ html,body{
     overflow: hidden;
     position: fixed;
 }
+
+model-viewer {
+  background-color: #000000;
+}
