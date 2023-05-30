@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Surf RX Meters</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/custom.css">
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-bundle.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+  <div class="full-size">
+    <model-viewer class="full-size" src="../Models/SurfTest/SurfRX_XYZ_3DModel_V2.glb"
+              ios-src="../Models/SurfTest/SurfRX_XYZ_3DModel_V2_Meters.usdz"
+              alt="Surf RX"
+              autoplay = true
+              background-color="#000000"
+              shadow-intensity="1"
+              ar
+              camera-controls>
+            </model-viewer>
+  </div>
+</body>
+</html>
