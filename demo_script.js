@@ -59,9 +59,9 @@ function changeIt(number) {
       break;
     case 8:
         //poster = "Imgs/Posters/swimsuitE_poster.png";
-        src = "Models/Swimsuits/Swimsuit_E.gltf";
-        ios_src = "Models/Swimsuits/Swimsuit_E.usdz";
-        alt_comment = "Swimsuit_E 01";
+        src = "Models/Demo/the_steampunk_vault.glb";
+        ios_src = "Models/Demo/the_steampunk_vault.usdz";
+        alt_comment = "Vault";
       break;
     case 9:
         //poster = "Imgs/Posters/swimsuitF_poster.png";
