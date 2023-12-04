@@ -35,27 +35,27 @@ function changeIt(number) {
       break;
     case 4:
         //poster = "Imgs/Posters/swimsuitA_poster.png";
-        src = "Models/Swimsuits/Swimsuit_A.gltf";
-        ios_src = "Models/Swimsuits/Swimsuit_A.usdz";
-        alt_comment = "Swimsuit_A 01";
+        src = "Models/Demo/lord_inquisitor_servo_skull.glb";
+        ios_src = "Models/Demo/lord_inquisitor_servo_skull.usdz";
+        alt_comment = "Lord Inquisitor";
       break;
     case 5:
         //poster = "Imgs/Posters/swimsuitB_poster.png";
-        src = "Models/Swimsuits/Swimsuit_B.gltf";
-        ios_src = "Models/Swimsuits/Swimsuit_B.usdz";
-        alt_comment = "Swimsuit_B 01";
+        src = "Models/Demo/model_47a_-_loggerhead_sea_turtle.glb";
+        ios_src = "Models/Demo/model_47a_-_loggerhead_sea_turtle.usdz";
+        alt_comment = "Sea Turtle";
       break;
     case 6:
         //poster = "Imgs/Posters/swimsuitC_poster.png";
-        src = "Models/Swimsuits/Swimsuit_C.gltf";
-        ios_src = "Models/Swimsuits/Swimsuit_C.usdz";
-        alt_comment = "Swimsuit_C 01";
+        src = "Models/Demo/city_survival_girl.glb";
+        ios_src = "Models/Demo/city_survival_girl.usdz";
+        alt_comment = "Survival Girl";
 	 break;
     case 7:
         //poster = "Imgs/Posters/swimsuitD_poster.png";
-        src = "Models/Swimsuits/Swimsuit_D.gltf";
-        ios_src = "Models/Swimsuits/Swimsuit_D.usdz";
-        alt_comment = "Swimsuit_D 01";
+        src = "Models/Demo/veribot.glb";
+        ios_src = "Models/Demo/veribot.usdz";
+        alt_comment = "Veribot";
       break;
     case 8:
         //poster = "Imgs/Posters/swimsuitE_poster.png";
