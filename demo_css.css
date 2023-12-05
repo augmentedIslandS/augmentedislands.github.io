@@ -12,9 +12,10 @@ body {
 }
 
 .btns_container {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px; /* Adjust this value as needed */
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; /* Adjust this value as needed */
+  flex-wrap: wrap;
 }
 
 .model {
@@ -26,11 +27,11 @@ body {
   width: 80%;
   height: 400px;
   background-color: "#FFFFFF";
-} 
+}
 
 .button {
-    margin: 0 5px;
-    padding: 10px 20px;
+  margin: 10px 5px;
+  padding: 10px 20px;
     font-size: 16px;
     border: none;
     color: #FFFFFF;
@@ -61,4 +62,10 @@ button:hover {
 
 button:hover:before {
     transform: scale(2) translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
 }
