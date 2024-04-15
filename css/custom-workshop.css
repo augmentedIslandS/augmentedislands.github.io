@@ -1,0 +1,37 @@
+@import url(omnes-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Coda);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+
+
+
+/*======================================================================================================
+                            Global
+=======================================================================================================*/
+html,body{
+  height:100%;
+  width:100%;
+  margin: 0px;
+}
+
+
+.full-size{
+  height:100%;
+  width:100%;
+  margin: 0px;
+  background-color: "#FFFFFF";
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+#fullDiv {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+model-viewer {
+  background-color: #FFFFFF;
+}
