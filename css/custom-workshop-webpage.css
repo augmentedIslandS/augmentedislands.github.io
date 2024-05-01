@@ -26,6 +26,17 @@ html,body{
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
 
+@media (min-width: 768px) {
+  .full-size{
+    height:100%;
+    width:100%;
+    max-width:1500px;
+    margin: 0px;
+    background-color: "#FFFFFF";
+    overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  }
+}
+
 #fullDiv {
     height: 100%;
     width: 100%;
@@ -39,7 +50,7 @@ model-viewer {
 
 .upper-section {
   background-color: #223035;
-  height: 30vh; /* 35% of the viewport height */
+  height: 290px; /* 35% of the viewport height */
   display: flex; /* Enable flexbox for positioning */
   align-items: flex-end; /* Align content vertically to bottom */
   justify-content: flex-end; /* Align content horizontally to right */
@@ -76,6 +87,7 @@ model-viewer {
 .title {
   font-family: Proxima Nova, sans-serif;
   font-weight: bold;
+  text-align: right; /* Aligns text to the right */
   color: #fff; /* White color for the text */
   margin-bottom:  -1.5rem; /* Margin under the title */
   font-size: 1.8rem; /* Increase title font size */
@@ -83,6 +95,7 @@ model-viewer {
 }
 
 .description {
+  max-width: 400px;
   font-family: Ratio, sans-serif;
   color: #fff; /* White color for the text */
   font-size: 1.8rem; /* Increase description font size */
@@ -98,6 +111,16 @@ model-viewer {
   height: 250px;
   background-color: #FFFFFF; /* Optional background color for container */
 }
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  .model-viewer-container {
+    width: 100%; /* Stretch container to full width */
+    height: 450px;
+    background-color: #FFFFFF; /* Optional background color for container */
+  }
+}
+
 
 /* Center the model-viewer horizontally (optional) */
 .model-viewer-container model-viewer {
@@ -118,7 +141,6 @@ model-viewer {
   background-color: #BFDED5;
   border: none; /* Remove button border */
   border-radius: 20px; /* Add rounded corners */
-  cursor: pointer; /* Show hand cursor on hover */
   margin: 0.5rem; /* Add margin between buttons */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
@@ -126,8 +148,8 @@ model-viewer {
 
 /* Styles for button icons */
 .button-icon {
-  width: 75%; /* 60% of button width */
-  height: 46%; /* 60% of button height */
+  width: 90px; /* 60% of button width */
+  height: 90px; /* 60% of button height */
   margin: 0 auto; /* Center icon horizontally */
   border-radius: 50%; /* Circle shape for icon */
   background-color: #223035; /* Color for circle */
@@ -147,6 +169,7 @@ model-viewer {
   padding: 0.8rem 0.8rem; /* Increase padding for left and right margins */
   font-size: 1.1rem; /* Adjust font size as needed */
   color: #223035; /* Text color */
+  font-family: Ratio, sans-serif;
 }
 
 
@@ -157,6 +180,16 @@ model-viewer {
   padding: 1rem 2rem; /* Add padding for content */
   margin-top: -2.5rem; /* Upper margin of 2 units */
   margin-bottom: 0rem; /* Upper margin of 2 units */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Styles for learn more section */
+.last-section {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 
@@ -172,6 +205,13 @@ model-viewer {
   font-family: Ratio, sans-serif;
 }
 
+@media (min-width: 768px) {
+  .learn-more-text {
+    padding-left: 2rem;
+  }
+}
+
+
 
 .bottom-margin {
   height: 300px;
@@ -184,16 +224,22 @@ model-viewer {
 @media (min-width: 768px) {
   .upper-section {
     display: flex; /* Reset to flexbox for horizontal mode */
-    align-items: flex-start; /* Align content vertically to top */
+    align-items: flex-end; /* Align content vertically to top */
     justify-content: flex-end; /* Align content horizontally to right */
-    height: 130px; /* 35% of the viewport height */
+    height: 200px; /* 35% of the viewport height */
   }
 
   .text-container {
     margin-left: auto; /* Maintain horizontal centering */
     margin-top: 0rem; /* Add margin from the top */
     max-width: 90%; /* Limit container width to 60% of viewport */
+    text-align: right; /* Aligns text to the right */
   }
+
+  .learn-more-text {
+    max-width: 60%;
+  }
+
 }
 
 
@@ -201,27 +247,42 @@ model-viewer {
 .module-container {
   display: flex;
   flex-direction: column; /* Stack elements vertically by default */
-  margin-bottom: 2rem; /* Add some margin between modules */
-  margin-top: 1rem; /* Add some margin between modules */
+  margin-bottom: 0rem; /* Add some margin between modules */
+  margin-top: 0rem; /* Add some margin between modules */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
 
 /* Responsive layout using CSS Grid */
 .module-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min width as needed */
-  gap: 2rem; /* Add gap between modules */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  margin-bottom: 0rem; /* Add some margin between modules */
+  margin-top: 0rem; /* Add some margin between modules */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
 }
 
-/* Media query for mobile view (one column) */
 @media (min-width: 768px) {
   .module-grid {
-    grid-template-columns: 1fr;
+    flex-direction: row; /* Arrange image and text side-by-side on mobile */
+    margin-top: 0rem; /* Add some margin between modules */
+  }
+
+  .left-grid {
+    flex-direction: row; /* Arrange image and text side-by-side on mobile */
+    margin-top: 0rem; /* Add some margin between modules */
   }
 
   .module-container {
-    flex-direction: row; /* Arrange image and text side-by-side on mobile */
-    margin-top: 1rem; /* Add some margin between modules */
+    flex-direction: column; /* Arrange image and text side-by-side on mobile */
+    margin-top: 0rem; /* Add some margin between modules */
+  }
+
+  .separator {
+    width: 50px; /* Set width for the separation line */
+    height: 100%; /* Set height for the separation line (adjust for full height) */
   }
 }
 
@@ -265,4 +326,69 @@ model-viewer {
   font-family: Ratio, sans-serif;
   font-size: 0.7rem; /* Adjust font size for learn more text */
   margin-top: -1rem; /* Add some margin below the title */
+}
+
+@media (min-width: 768px) {
+  .text-content-items .left-text {
+    margin-left: 1rem;
+  }
+  .text-content-items .right-text {
+    margin-right: 1rem;
+  }
+}
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  /* Styles for custom buttons */
+  .custom-button {
+    width: 250px;
+    height: 110px;
+    background-color: #BFDED5;
+    border: none; /* Remove button border */
+    border-radius: 20px; /* Add rounded corners */
+    margin: 0.5rem; /* Add margin between buttons */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    display: flex; /* Enable flexbox for horizontal arrangement */
+    align-items: center; /* Vertically center child elements */
+    justify-content: flex-start; /* Horizontally center child elements */
+  }
+
+    /* Styles for button icons */
+  .button-icon {
+    width: 65px; /* 60% of button width */
+    height: 65px; /* 60% of button height */
+    margin: 0 0; /* Center icon horizontally */
+    border-radius: 50%; /* Circle shape for icon */
+    margin-left: 0.4rem;
+    background-color: #223035; /* Color for circle */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+  }
+
+    /* Styles for button icons */
+  .button-icon img {
+    width: 100%; /* 60% of button width */
+    height: 100%; /* 60% of button height */
+  }
+
+      /* Styles for button icons */
+  .button-icon img {
+    width: 90%; /* 60% of button width */
+    height: 90%; /* 60% of button height */
+  }
+
+        /* Styles for button icons */
+  .button-icon .littleimg {
+    width: 80%; /* 60% of button width */
+    height: 70%; /* 60% of button height */
+  }
+
+  /* Styles for button text */
+  .button-text {
+    text-align: center;
+    align-items: flex-end; /* Center image vertically */
+    margin: 0 0; /* Center icon horizontally */
+    font-size: 1.1rem; /* Adjust font size as needed */
+    color: #223035; /* Text color */
+  }
 }
