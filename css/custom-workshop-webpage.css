@@ -20,8 +20,9 @@ html,body{
 .full-size{
   height:100%;
   width:100%;
+  max-width:500px;
   margin: 0px;
-  background-color: "#0000FF";
+  background-color: "#FFFFFF";
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
 
@@ -33,7 +34,7 @@ html,body{
 }
 
 model-viewer {
-  background-color: #0000FF;
+  background-color: #FFFFFF;
 }
 
 .upper-section {
@@ -95,7 +96,7 @@ model-viewer {
 .model-viewer-container {
   width: 100%; /* Stretch container to full width */
   height: 250px;
-  background-color: #000000; /* Optional background color for container */
+  background-color: #FFFFFF; /* Optional background color for container */
 }
 
 /* Center the model-viewer horizontally (optional) */
@@ -119,7 +120,7 @@ model-viewer {
   border-radius: 20px; /* Add rounded corners */
   cursor: pointer; /* Show hand cursor on hover */
   margin: 0.5rem; /* Add margin between buttons */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
 
 
