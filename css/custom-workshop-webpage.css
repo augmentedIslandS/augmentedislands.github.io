@@ -1,0 +1,267 @@
+@import url(omnes-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Coda);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+
+
+
+/*======================================================================================================
+                            Global
+=======================================================================================================*/
+html,body{
+  /*height:100%;
+  width:100%;*/
+  margin: 0px;
+}
+
+
+.full-size{
+  height:100%;
+  width:100%;
+  margin: 0px;
+  background-color: "#0000FF";
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+#fullDiv {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+model-viewer {
+  background-color: #0000FF;
+}
+
+.upper-section {
+  background-color: #223035;
+  height: 30vh; /* 35% of the viewport height */
+  display: flex; /* Enable flexbox for positioning */
+  align-items: flex-end; /* Align content vertically to bottom */
+  justify-content: flex-end; /* Align content horizontally to right */
+  padding: 1rem; /* Padding around the section */
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+.image-button {
+  background-image: url("../workshop/images/Knockout_Transparent.png");
+  background-color: transparent; /* Make button background transparent */
+  background-size: contain; /* Fix for image size */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  border: none; /* Remove button border */
+  padding: 0; /* Remove button padding (optional) */
+  cursor: pointer; /* Shows hand cursor on hover */
+  width: 60px; /* Adjust width if needed */
+  height: 60px; /* Adjust height if needed */
+  position: absolute; /* Make button absolute positioned relative to .upper-section */
+  top: 3rem; /* Position 1rem from the top */
+  left: 2rem; /* Position 1rem from the left */
+}
+
+.image-button img {
+  width: 100%; /* Stretch image to fit button size */
+  height: 100%; /* Stretch image to fit button size */
+}
+
+.text-container {
+  text-align: right; /* Aligns text to the right */
+  max-width: 80%; /* Limit container width to 60% of viewport */
+  margin-left: auto; /* Center the container horizontally */
+}
+
+.title {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: bold;
+  color: #fff; /* White color for the text */
+  margin-bottom:  -1.5rem; /* Margin under the title */
+  font-size: 1.8rem; /* Increase title font size */
+
+}
+
+.description {
+  font-family: Ratio, sans-serif;
+  color: #fff; /* White color for the text */
+  font-size: 1.8rem; /* Increase description font size */
+  line-height: 1.4; /* Increase line spacing */
+  margin-bottom:  1rem; /* Margin under the title */
+}
+
+/* Your existing CSS styles */
+
+/* New styles for model-viewer container */
+.model-viewer-container {
+  width: 100%; /* Stretch container to full width */
+  height: 250px;
+  background-color: #000000; /* Optional background color for container */
+}
+
+/* Center the model-viewer horizontally (optional) */
+.model-viewer-container model-viewer {
+  margin: 0 auto;
+}
+
+/* Styles for new button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem; /* Add margin top for spacing */
+}
+
+/* Styles for custom buttons */
+.custom-button {
+  width: 125px;
+  height: 190px;
+  background-color: #BFDED5;
+  border: none; /* Remove button border */
+  border-radius: 20px; /* Add rounded corners */
+  cursor: pointer; /* Show hand cursor on hover */
+  margin: 0.5rem; /* Add margin between buttons */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+}
+
+
+/* Styles for button icons */
+.button-icon {
+  width: 75%; /* 60% of button width */
+  height: 46%; /* 60% of button height */
+  margin: 0 auto; /* Center icon horizontally */
+  border-radius: 50%; /* Circle shape for icon */
+  background-color: #223035; /* Color for circle */
+  padding: 5%; /* Padding around icon content */
+  margin-top: 0.5rem;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+
+
+/* Styles for button text */
+.button-text {
+  text-align: center;
+  margin-top: 0.5rem; /* Margin top for spacing */
+  padding: 0.8rem 0.8rem; /* Increase padding for left and right margins */
+  font-size: 1.1rem; /* Adjust font size as needed */
+  color: #223035; /* Text color */
+}
+
+
+/* Styles for learn more section */
+.learn-more-section {
+  background-color: #223035;
+  color: #FFF; /* Text color for learn more section */
+  padding: 1rem 2rem; /* Add padding for content */
+  margin-top: -2.5rem; /* Upper margin of 2 units */
+  margin-bottom: 0rem; /* Upper margin of 2 units */
+}
+
+
+
+
+.learn-more-text {
+  font-size: 2rem; /* Adjust font size for learn more text */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-bottom: 0; /* Remove bottom margin for better spacing */
+  margin-top: 4rem; /* Remove bottom margin for better spacing */
+  margin-left: 20px;
+  margin-right: 70px;
+  font-family: Ratio, sans-serif;
+}
+
+
+.bottom-margin {
+  height: 300px;
+  margin-top: 1rem; /* Upper margin of 2 units */
+  margin-bottom: 1rem; /* Upper margin of 2 units */
+}
+
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  .upper-section {
+    display: flex; /* Reset to flexbox for horizontal mode */
+    align-items: flex-start; /* Align content vertically to top */
+    justify-content: flex-end; /* Align content horizontally to right */
+    height: 130px; /* 35% of the viewport height */
+  }
+
+  .text-container {
+    margin-left: auto; /* Maintain horizontal centering */
+    margin-top: 0rem; /* Add margin from the top */
+    max-width: 90%; /* Limit container width to 60% of viewport */
+  }
+}
+
+
+/* New container for module sections */
+.module-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  margin-bottom: 2rem; /* Add some margin between modules */
+  margin-top: 1rem; /* Add some margin between modules */
+}
+
+
+/* Responsive layout using CSS Grid */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min width as needed */
+  gap: 2rem; /* Add gap between modules */
+}
+
+/* Media query for mobile view (one column) */
+@media (min-width: 768px) {
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-container {
+    flex-direction: row; /* Arrange image and text side-by-side on mobile */
+    margin-top: 1rem; /* Add some margin between modules */
+  }
+}
+
+.image-text-container-items {
+  display: flex; /* Enable flexbox for side-by-side arrangement */
+  width: fit-content; /* Adjust width as needed */
+  height: fit-content; /* Adjust width as needed */
+  margin: 1rem; /* Add margin for spacing */
+}
+
+.image-text-container-items .img-left {
+  width: 140px; /* Adjust image width as needed */
+  height: auto; /* Maintain image aspect ratio */
+  margin-right: 2rem;
+  border-radius: 50%; /* Set to 50% for a circle */
+}
+
+.image-text-container-items .img-right {
+  width: 140px; /* Adjust image width as needed */
+  height: auto; /* Maintain image aspect ratio */
+  margin-left: 2rem;
+  border-radius: 50%; /* Set to 50% for a circle */
+
+}
+
+.text-content-items {
+  display: grid;
+  align-items: center;
+  height: 140px;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+.text-content-items h2 {
+  font-family: Ratio, sans-serif;
+  font-size: 0.8rem; /* Adjust font size for learn more text */
+  margin-bottom: -1rem; /* Add some margin below the title */
+}
+
+.text-content-items p {
+  font-family: Ratio, sans-serif;
+  font-size: 0.7rem; /* Adjust font size for learn more text */
+  margin-top: -1rem; /* Add some margin below the title */
+}

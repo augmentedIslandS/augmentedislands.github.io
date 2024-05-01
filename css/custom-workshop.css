@@ -21,7 +21,7 @@ html,body{
   height:100%;
   width:100%;
   margin: 0px;
-  background-color: "#FFFFFF";
+  background-color: "#000000";
   overflow:hidden; /* or overflow:auto; if you want scrollbars */
 }
 
@@ -34,4 +34,74 @@ html,body{
 
 model-viewer {
   background-color: #FFFFFF;
+}
+
+.upper-section {
+  background-color: #223035;
+  height: 30vh; /* 35% of the viewport height */
+  display: flex; /* Enable flexbox for positioning */
+  align-items: flex-end; /* Align content vertically to bottom */
+  justify-content: flex-end; /* Align content horizontally to right */
+  padding: 1rem; /* Padding around the section */
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+.image-button {
+  background-image: url("../workshop/images/Knockout_Transparent.png");
+  background-color: transparent; /* Make button background transparent */
+  background-size: contain; /* Fix for image size */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  border: none; /* Remove button border */
+  padding: 0; /* Remove button padding (optional) */
+  cursor: pointer; /* Shows hand cursor on hover */
+  width: 60px; /* Adjust width if needed */
+  height: 60px; /* Adjust height if needed */
+  position: absolute; /* Make button absolute positioned relative to .upper-section */
+  top: 3rem; /* Position 1rem from the top */
+  left: 2rem; /* Position 1rem from the left */
+}
+
+.image-button img {
+  width: 100%; /* Stretch image to fit button size */
+  height: 100%; /* Stretch image to fit button size */
+}
+
+
+.text-container {
+  text-align: right; /* Aligns text to the right */
+  max-width: 80%; /* Limit container width to 60% of viewport */
+  margin-left: auto; /* Center the container horizontally */
+}
+
+.title {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: bold;
+  color: #fff; /* White color for the text */
+  margin-bottom:  -1.5rem; /* Margin under the title */
+  font-size: 1.8rem; /* Increase title font size */
+
+}
+
+.description {
+  font-family: Ratio, sans-serif;
+  color: #fff; /* White color for the text */
+  font-size: 1.8rem; /* Increase description font size */
+  line-height: 1.4; /* Increase line spacing */
+  margin-bottom:  1rem; /* Margin under the title */
+}
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  .upper-section {
+    display: flex; /* Reset to flexbox for horizontal mode */
+    align-items: flex-start; /* Align content vertically to top */
+    justify-content: flex-end; /* Align content horizontally to right */
+    height: 30vh; /* 35% of the viewport height */
+  }
+
+  .text-container {
+    margin-left: auto; /* Maintain horizontal centering */
+    margin-top: 0rem; /* Add margin from the top */
+    max-width: 90%; /* Limit container width to 60% of viewport */
+  }
 }
