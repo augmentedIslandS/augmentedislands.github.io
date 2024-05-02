@@ -5,6 +5,33 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
 
+@font-face {
+  font-family: "RatioBlack"; /* Specify a name for your font */
+  src: url('../workshop/fonts/RatioBlack.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: bold; /* Optional: specify font weight */
+}
+
+@font-face {
+  font-family: "RatioRegular"; /* Specify a name for your font */
+  src: url('../workshop/fonts/RatioRegular.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
+
+@font-face {
+  font-family: "RatioLight"; /* Specify a name for your font */
+  src: url('../workshop/fonts/RatioLight.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
+
+
+@font-face {
+  font-family: "RatioBold"; /* Specify a name for your font */
+  src: url('../workshop/fonts/RatioBold.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
 
 
 /*======================================================================================================
@@ -59,7 +86,7 @@ model-viewer {
 }
 
 .image-button {
-  background-image: url("../workshop/images/Knockout_Transparent.png");
+  background-image: url("../workshop/images/Knockout_Transparent.svg");
   background-color: transparent; /* Make button background transparent */
   background-size: contain; /* Fix for image size */
   background-repeat: no-repeat; /* Prevent image tiling */
@@ -85,7 +112,7 @@ model-viewer {
 }
 
 .title {
-  font-family: Proxima Nova, sans-serif;
+  font-family: "RatioBlack", sans-serif;
   font-weight: bold;
   text-align: right; /* Aligns text to the right */
   color: #fff; /* White color for the text */
@@ -96,7 +123,7 @@ model-viewer {
 
 .description {
   max-width: 400px;
-  font-family: Ratio, sans-serif;
+  font-family: "RatioLight", sans-serif;
   color: #fff; /* White color for the text */
   font-size: 1.8rem; /* Increase description font size */
   line-height: 1.4; /* Increase line spacing */
@@ -169,7 +196,7 @@ model-viewer {
   padding: 0.8rem 0.8rem; /* Increase padding for left and right margins */
   font-size: 1.1rem; /* Adjust font size as needed */
   color: #223035; /* Text color */
-  font-family: Ratio, sans-serif;
+  font-family: "RatioRegular", sans-serif;
 }
 
 
@@ -202,7 +229,7 @@ model-viewer {
   margin-top: 4rem; /* Remove bottom margin for better spacing */
   margin-left: 20px;
   margin-right: 70px;
-  font-family: Ratio, sans-serif;
+  font-family: "RatioBlack", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -317,13 +344,13 @@ model-viewer {
 }
 
 .text-content-items h2 {
-  font-family: Ratio, sans-serif;
+  font-family: "RatioBold", sans-serif;
   font-size: 0.8rem; /* Adjust font size for learn more text */
   margin-bottom: -1rem; /* Add some margin below the title */
 }
 
 .text-content-items p {
-  font-family: Ratio, sans-serif;
+  font-family: "RatioRegular", sans-serif;
   font-size: 0.7rem; /* Adjust font size for learn more text */
   margin-top: -1rem; /* Add some margin below the title */
 }
