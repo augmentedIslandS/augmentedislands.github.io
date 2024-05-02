@@ -57,7 +57,7 @@ html,body{
   .full-size{
     height:100%;
     width:100%;
-    max-width:1500px;
+    max-width:900px;
     margin: 0px;
     background-color: "#FFFFFF";
     overflow:hidden; /* or overflow:auto; if you want scrollbars */
