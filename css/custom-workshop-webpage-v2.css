@@ -241,6 +241,7 @@ model-viewer {
   margin-right: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+   /* Apply grid layout properties */
 }
 
 /* Styles for learn more section */
@@ -309,6 +310,8 @@ model-viewer {
   margin-top: 0rem; /* Add some margin between modules */
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
+align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Distributes content evenly with space between */
 }
 
 @media (min-width: 768px) {
