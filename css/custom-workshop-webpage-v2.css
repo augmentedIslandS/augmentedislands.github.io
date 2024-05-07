@@ -329,6 +329,7 @@ align-items: center; /* Vertically centers content */
   .module-container {
     flex-direction: column; /* Arrange image and text side-by-side on mobile */
     max-width: 50%;
+    min-width: 50%;
     margin-top: 0rem; /* Add some margin between modules */
   }
 
