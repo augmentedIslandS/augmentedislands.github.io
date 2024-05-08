@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Workshop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/workshop-css.css">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-bundle.js"></script>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  </head>
+  <body>
+
+    <div class="long-up-section">
+      <div class="limit-section">
+        <div class="upper-section">
+          <button class="image-button"></button>
+          <div class="text-container">
+            <h1 class="title">Bloom & Explore</h1>
+            <p class="description">Our favorite logo meets our favorite Minnesota flora and fauna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="model-viewer-container">
+      <model-viewer class="full-size"
+      src="./models/Workshop_Propuesta_Bees_V1.glb"
+      ios-src="./models/Workshop_Propuesta_Bees_V1.usdz"
+      alt="Workshop V9 Animated"
+      autoplay
+      animation-name="Animales"
+      background-color="#000000"
+      shadow-intensity="1"
+      ar
+      disable_occlusion=true
+      camera-controls
+      touch-action="pan-y"
+      max-camera-orbit="auto auto 200%"
+      min-camera-orbit="auto auto 10%"
+      camera-orbit="auto auto 60%"
+      camera-target="auto auto auto"
+      >
+      </model-viewer>
+    </div>
+
+    <div class="button-container">
+      <div class="custom-button">
+        <div class="button-icon">
+          <img src="./images/rotate.svg" alt="Rotate icon" width="75%" height="75%">
+        </div>
+        <p class="button-text">Tap to rotate</p>
+      </div>
+      <div class="custom-button">
+        <div class="button-icon">
+          <img src="./images/resize.svg" alt="Resize icon" width="70%" height="70%">
+        </div>
+        <p class="button-text">Pinch to resize</p>
+      </div>
+      <div class="custom-button">
+        <div class="button-icon">
+          <img src="./images/tap.svg" alt="Tap icon" class="littleimg">
+        </div>
+        <p class="button-text" id="desktop-text">Tap to launch AR (for mobile only)</p>
+        <p class="button-text" id="mobile-text">Tap to launch AR </p>
+      </div> 
+    </div>
+
+    <div class="learn-more-section">
+      <div class="last-section">
+        <p class="learn-more-text">Learn more about the native plants we used in our AR experience</p>
+        <div class="module-grid">
+          <div class="module-container">
+            <div class="image-text-container-items">
+              <img class="img-left" src="./images/Ruby-throatedHummingbird@2x.png" alt="Image description">
+              <div class="text-content-items">
+                <h2 class="right-text">Ruby-throated Hummingbird</h2>
+                <p class="right-text">Archilocus colubris, or the ruby-throated hummingbird, at just 3 inches long, is the smallest bird in Minnesota and can start to be seen around the state in the first weeks of May.</p>
+              </div>
+            </div>
+
+            <div class="image-text-container-items">
+              <div class="text-content-items">
+                <h2 class="right-text">Bumblebee</h2>
+                <p class="right-text">Bombus terricola, or the yellow-banded bumblebee, have adapted to cold weather by having thick, long hair and are often found in colder climates.</p>
+              </div>
+              <img class="img-right" src="./images/Bumblebee@2x.png" alt="Image description">
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="module-container">
+            <div class="image-text-container-items">
+              <img class="img-left" src="./images/MonarchButterfly@2x.png" alt="Image description">
+              <div class="text-content-items">
+                <h2 class="left-text">Monarch Butterfly</h2>
+                <p class="left-text">Danaus plexippus, or the monarch butterfly, feeds on milkweed and flowering plants and migrates by the millions from Minnesota to the same location in Mexico each fall to spend the winter months.</p>
+              </div>
+            </div>
+
+            <div class="image-text-container-items">
+             
+              <div class="text-content-items">
+                <h2 class="left-text">Bottle gentian</h2>
+                <p class="left-text">Gentiana andrewsii, or bottle gentian, are popular with bumblebees because they are the only insects strong enough to pry open the closed flowers.</p>
+              </div>
+               <img class="img-right" src="./images/BottleGentian@2x.png" alt="Image description">
+            </div>
+          </div>
+        </div>
+
+        <div class="module-grid">
+          <div class="module-container">
+            <div class="image-text-container-items">
+              <img class="img-left" src="./images/Bluefalseindigo@2x.png" alt="Image description">
+              <div class="text-content-items">
+                <h2 class="right-text">Blue false indigo</h2>
+                <p class="right-text">Baptisia australis, or blue false indigo, takes two full years to reach maturity and is a huge attractant for pollinators.</p>
+              </div>
+            </div>
+
+            <div class="image-text-container-items">
+              <div class="text-content-items">
+                <h2 class="left-text">Harebell</h2>
+                <p class="left-text">Campanula rotundifolia, or harebell, gets its name from the folk belief that witches used this flower to transform into hares.</p>
+              </div>
+              <img class="img-right" src="./images/Harebell@2x.png" alt="Image description">
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="module-container">
+            <div class="image-text-container-items">
+              <img class="img-left" src="./images/Maidenhairfern@2x.png" alt="Image description">
+              <div class="text-content-items">
+                <h2 class="right-text">Maidenhair fern</h2>
+                <p class="right-text">Adiantum pedatum, or the maidenhair fern, is a popular houseplant and also resistant to damage from deer outside.</p>
+              </div>
+            </div>
+
+            <div class="image-text-container-items">
+             
+              <div class="text-content-items">
+                <h2 class="right-text">Virginia bluebells</h2>
+                <p class="right-text">Mertensia virginica, or virginia bluebells, bloom soon after the snow melts and go completely dormant in the winter.</p>
+              </div>
+               <img class="img-right" src="./images/Virginiabluebells@2x.png"  alt="Image description">
+            </div>
+          </div>
+        </div>
+
+        <div class="module-grid">
+          <div class="module-container">
+            <div class="image-text-container-items">
+              <img class="img-left" src="./images/CoreopsisPalmata@2x.png" alt="Image description">
+              <div class="text-content-items">
+                <h2 class="left-text">Coreopsis Palmata</h2>
+                <p class="left-text">Coreopsis palmata, or stiff coreopsis, is also known as tickseed and blooms for 3-4 weeks during the midsummer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-margin">
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
+

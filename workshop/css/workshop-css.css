@@ -1,0 +1,473 @@
+@import url(omnes-pro.css);
+@import url(https://fonts.googleapis.com/css?family=Coda);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
+
+@font-face {
+  font-family: "RatioBlack"; /* Specify a name for your font */
+  src: url('../fonts/RatioBlack.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: bold; /* Optional: specify font weight */
+}
+
+@font-face {
+  font-family: "RatioRegular"; /* Specify a name for your font */
+  src: url('../fonts/RatioRegular.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
+
+@font-face {
+  font-family: "RatioLight"; /* Specify a name for your font */
+  src: url('../fonts/RatioLight.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
+
+
+@font-face {
+  font-family: "RatioBold"; /* Specify a name for your font */
+  src: url('../fonts/RatioBold.otf') format('opentype'), /* Path to .ttf file */
+  font-weight: normal; /* Optional: specify font weight */
+}
+
+
+
+/*======================================================================================================
+                            Global
+=======================================================================================================*/
+
+
+html,body{
+  /*height:100%;
+  width:100%;*/
+  margin: 0;
+  padding: 0;
+}
+
+
+.full-size{
+  height:100%;
+  width:100%;
+  max-width:900px;
+  margin: 0px;
+  background-color: "#FFFFFF";
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+@media (min-width: 768px) {
+  .full-size{
+    height:100%;
+    width:100%;
+    max-width:900px;
+    margin: 0px;
+    background-color: "#FFFFFF";
+    overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  }
+}
+
+#fullDiv {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+model-viewer {
+  background-color: #FFFFFF;
+}
+
+.long-up-section {
+  background-color: #223035;
+  height: 290px; /* 35% of the viewport height */
+}
+
+/* Styles for learn more section */
+.limit-section {
+  max-width: 900px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upper-section {
+  height: 100%; /* 35% of the viewport height */
+  display: flex; /* Enable flexbox for positioning */
+  align-items: flex-end; /* Align content vertically to bottom */
+  justify-content: flex-end; /* Align content horizontally to right */
+  padding: 1rem; /* Padding around the section */
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+
+  .long-up-section {
+    height: 200px; /* 35% of the viewport height */
+  }
+
+  .upper-section {
+
+  }
+
+}
+
+
+
+.image-button {
+  background-image: url("../images/Knockout_Transparent.svg");
+  background-color: transparent; /* Make button background transparent */
+  background-size: contain; /* Fix for image size */
+  background-repeat: no-repeat; /* Prevent image tiling */
+  border: none; /* Remove button border */
+  padding: 0; /* Remove button padding (optional) */
+  cursor: pointer; /* Shows hand cursor on hover */
+  width: 60px; /* Adjust width if needed */
+  height: 60px; /* Adjust height if needed */
+  position: absolute; /* Make button absolute positioned relative to .upper-section */
+  top: 3rem; /* Position 1rem from the top */
+  left: 2rem; /* Position 1rem from the left */
+}
+
+.image-button img {
+  width: 100%; /* Stretch image to fit button size */
+  height: 100%; /* Stretch image to fit button size */
+}
+
+.text-container {
+  text-align: right; /* Aligns text to the right */
+  max-width: 80%; /* Limit container width to 60% of viewport */
+  margin-left: auto; /* Center the container horizontally */
+}
+
+.title {
+  font-family: "RatioBlack", sans-serif;
+  font-weight: bold;
+  text-align: right; /* Aligns text to the right */
+  color: #fff; /* White color for the text */
+  margin-bottom:  -1.5rem; /* Margin under the title */
+  font-size: 1.8rem; /* Increase title font size */
+
+}
+
+.description {
+  max-width: 400px;
+  font-family: "RatioLight", sans-serif;
+  color: #fff; /* White color for the text */
+  font-size: 1.8rem; /* Increase description font size */
+  line-height: 1.4; /* Increase line spacing */
+  margin-bottom:  2rem; /* Margin under the title */
+}
+
+/* Your existing CSS styles */
+
+/* New styles for model-viewer container */
+.model-viewer-container {
+  width: 100%; /* Stretch container to full width */
+  height: 250px;
+  background-color: #FFFFFF; /* Optional background color for container */
+}
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  .model-viewer-container {
+    width: 100%; /* Stretch container to full width */
+    height: 400px;
+    background-color: #FFFFFF; /* Optional background color for container */
+  }
+}
+
+
+/* Center the model-viewer horizontally (optional) */
+.model-viewer-container model-viewer {
+  margin: 0 auto;
+}
+
+/* Styles for new button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem; /* Add margin top for spacing */
+}
+
+/* Styles for custom buttons */
+.custom-button {
+  width: 125px;
+  height: 190px;
+  background-color: #BFDED5;
+  border: none; /* Remove button border */
+  border-radius: 20px; /* Add rounded corners */
+  margin: 0.5rem; /* Add margin between buttons */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+}
+
+
+/* Styles for button icons */
+.button-icon {
+  width: 90px; /* 60% of button width */
+  height: 90px; /* 60% of button height */
+  margin: 0 auto; /* Center icon horizontally */
+  border-radius: 50%; /* Circle shape for icon */
+  background-color: #223035; /* Color for circle */
+  padding: 5%; /* Padding around icon content */
+  margin-top: 0.5rem;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+
+
+/* Styles for button text */
+.button-text {
+  text-align: center;
+  margin-top: 0.5rem; /* Margin top for spacing */
+  padding: 0.8rem 0.8rem; /* Increase padding for left and right margins */
+  font-size: 1.1rem; /* Adjust font size as needed */
+  color: #223035; /* Text color */
+  font-family: "RatioRegular", sans-serif;
+}
+
+
+/* Styles for learn more section */
+.learn-more-section {
+  background-color: #223035;
+  color: #FFF; /* Text color for learn more section */
+  padding: 1rem 2rem; /* Add padding for content */
+  margin-top: -2.5rem; /* Upper margin of 2 units */
+  margin-bottom: 0rem; /* Upper margin of 2 units */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+   /* Apply grid layout properties */
+}
+
+/* Styles for learn more section */
+.last-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+
+.learn-more-text {
+  font-size: 2rem; /* Adjust font size for learn more text */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-bottom: 0; /* Remove bottom margin for better spacing */
+  margin-top: 4rem; /* Remove bottom margin for better spacing */
+  margin-left: 20px;
+  margin-right: 70px;
+  font-family: "RatioBlack", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .learn-more-text {
+    padding-left: 2rem;
+     max-width: 60%;
+  }
+}
+
+
+
+.bottom-margin {
+  height: 10px;
+  margin-top: 1rem; /* Upper margin of 2 units */
+  margin-bottom: 1rem; /* Upper margin of 2 units */
+}
+
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  .text-container {
+    margin-left: auto; /* Maintain horizontal centering */
+    margin-top: 0rem; /* Add margin from the top */
+    max-width: 90%; /* Limit container width to 60% of viewport */
+    text-align: right; /* Aligns text to the right */
+  }
+
+}
+
+
+/* New container for module sections */
+.module-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  margin-bottom: 0rem; /* Add some margin between modules */
+  margin-top: 0rem; /* Add some margin between modules */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+
+/* Responsive layout using CSS Grid */
+.module-grid {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically by default */
+  margin-bottom: 0rem; /* Add some margin between modules */
+  margin-top: 0rem; /* Add some margin between modules */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Distributes content evenly with space between */
+}
+
+
+
+@media (min-width: 768px) {
+  .module-grid {
+    flex-direction: row; /* Arrange image and text side-by-side on mobile */
+    margin-top: 0rem; /* Add some margin between modules */
+  }
+
+  .left-grid {
+    flex-direction: row; /* Arrange image and text side-by-side on mobile */
+    margin-top: 0rem; /* Add some margin between modules */
+  }
+
+  .module-container {
+    flex-direction: column; /* Arrange image and text side-by-side on mobile */
+    max-width: 50%;
+    min-width: 50%;
+    margin-top: 0rem; /* Add some margin between modules */
+  }
+
+  .separator {
+    width: 50px; /* Set width for the separation line */
+    height: 100%; /* Set height for the separation line (adjust for full height) */
+  }
+}
+
+.image-text-container-items {
+  display: flex; /* Enable flexbox for side-by-side arrangement */
+  width: fit-content; /* Adjust width as needed */
+  height: fit-content; /* Adjust width as needed */
+  margin: 1rem; /* Add margin for spacing */
+}
+
+.image-text-container-items .img-left {
+  width: 140px; /* Adjust image width as needed */
+  height: auto; /* Maintain image aspect ratio */
+  margin-right: 2rem;
+  border-radius: 50%; /* Set to 50% for a circle */
+}
+
+.image-text-container-items .img-right {
+  width: 140px; /* Adjust image width as needed */
+  height: auto; /* Maintain image aspect ratio */
+  margin-left: 2rem;
+  border-radius: 50%; /* Set to 50% for a circle */
+
+}
+
+.text-content-items {
+  display: grid;
+  align-items: center;
+  height: 140px;
+  padding: 0; /* Remove default padding */
+}
+
+.text-content-items h2 {
+  font-family: "RatioBold", sans-serif;
+  font-size: 0.8rem; /* Adjust font size for learn more text */
+  margin-bottom: 0.2rem; /* Add some margin below the title */
+  margin-top: auto; /* Add some margin below the title */
+  padding: 0;
+}
+
+.text-content-items p {
+  font-family: "RatioRegular", sans-serif;
+  font-size: 0.7rem; /* Adjust font size for learn more text */
+  margin-top: 0rem; /* Add some margin below the title */
+  margin-bottom: auto; /* Add some margin below the title */
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .text-content-items .left-text {
+    margin-left: 1rem;
+  }
+  .text-content-items .right-text {
+    margin-right: 1rem;
+  }
+}
+
+/* Media Query for Horizontal Screens */
+@media (min-width: 768px) {
+  /* Styles for custom buttons */
+  .custom-button {
+    width: 250px;
+    height: 110px;
+    background-color: #BFDED5;
+    border: none; /* Remove button border */
+    border-radius: 20px; /* Add rounded corners */
+    margin: 0.5rem; /* Add margin between buttons */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    display: flex; /* Enable flexbox for horizontal arrangement */
+    align-items: center; /* Vertically center child elements */
+    justify-content: flex-start; /* Horizontally center child elements */
+  }
+
+    /* Styles for button icons */
+  .button-icon {
+    min-width: 26%;
+    width: 65px; /* 60% of button width */
+    height: 65px; /* 60% of button height */
+    margin: 0 0; /* Center icon horizontally */
+    border-radius: 50%; /* Circle shape for icon */
+    margin-left: 0.4rem;
+    background-color: #223035; /* Color for circle */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+  }
+
+      /* Styles for button icons */
+  .button-icon img {
+    width: 90%; /* 60% of button width */
+    height: 90%; /* 60% of button height */
+  }
+
+        /* Styles for button icons */
+  .button-icon .littleimg {
+    width: 80%; /* 60% of button width */
+    height: 70%; /* 60% of button height */
+  }
+
+  /* Styles for button text */
+  .button-text {
+    text-align: center;
+    align-items: flex-end; /* Center image vertically */
+    margin: 0 0; /* Center icon horizontally */
+    font-size: 1.1rem; /* Adjust font size as needed */
+    color: #223035; /* Text color */
+  }
+}
+
+.transparent-image {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#desktop-text {
+
+}
+
+#mobile-text {
+
+}
+
+
+@media (max-width: 768px) { /* Up to 768px (adjust as needed) */
+  #desktop-text {
+    display: none; /* Hide on smaller screens */
+  }
+}
+
+@media (min-width: 768px) { /* 768px and above */
+  #mobile-text {
+    display: none; /* Hide on desktops */
+  }
+}
