@@ -315,6 +315,8 @@ align-items: center; /* Vertically centers content */
   justify-content: space-between; /* Distributes content evenly with space between */
 }
 
+
+
 @media (min-width: 768px) {
   .module-grid {
     flex-direction: row; /* Arrange image and text side-by-side on mobile */
@@ -411,6 +413,7 @@ align-items: center; /* Vertically centers content */
 
     /* Styles for button icons */
   .button-icon {
+    min-width: 26%;
     width: 65px; /* 60% of button width */
     height: 65px; /* 60% of button height */
     margin: 0 0; /* Center icon horizontally */
@@ -419,12 +422,6 @@ align-items: center; /* Vertically centers content */
     background-color: #223035; /* Color for circle */
     justify-content: center; /* Center image horizontally */
     align-items: center; /* Center image vertically */
-  }
-
-    /* Styles for button icons */
-  .button-icon img {
-    width: 100%; /* 60% of button width */
-    height: 100%; /* 60% of button height */
   }
 
       /* Styles for button icons */
@@ -452,4 +449,25 @@ align-items: center; /* Vertically centers content */
 .transparent-image {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0);
+}
+
+#desktop-text {
+
+}
+
+#mobile-text {
+
+}
+
+
+@media (max-width: 768px) { /* Up to 768px (adjust as needed) */
+  #desktop-text {
+    display: none; /* Hide on smaller screens */
+  }
+}
+
+@media (min-width: 768px) { /* 768px and above */
+  #mobile-text {
+    display: none; /* Hide on desktops */
+  }
 }
